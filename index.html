@@ -1,2070 +1,1851 @@
-<!DOCTYPE html>
-<html lang="ne">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAHARA TV HD × WESTERN EDITORS | कार्यक्रम कभरेज तथा मिडिया प्रोडक्सन</title>
-    <meta name="description" content="SAHARA TV HD र WESTERN EDITORS को संयुक्त प्रयास। कोहलपुर, बाँकेमा प्रोफेशनल कार्यक्रम कभरेज, प्रवर्द्धनात्मक भिडियो, समाचार, विज्ञापन र ड्रोन भिडियोग्राफी।">
-    <meta name="keywords" content="Video Production in Kohalpur, Cinematography in Kohalpur, Drone Video in Kohalpur, Western Editors Kohalpur, Sahara TV HD, Banke Media Production">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="SAHARA TV HD × WESTERN EDITORS | मिडिया प्रोडक्सन">
-    <meta property="og:description" content="उत्कृष्ट कार्यक्रम कभरेज, प्रवर्द्धनात्मक भिडियो र मिडिया प्रोडक्सन सेवाहरू। Kohalpur, Banke, Nepal.">
-    <meta property="og:type" content="website">
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+    /* ==========================================================================
+       GLOBAL STYLES & VARIABLES
+       ========================================================================== */
+    :root {
+        --bg-dark: #08090a;
+        --bg-surface: #121418;
+        --bg-card: #1a1d24;
+        --bg-glass: rgba(18, 20, 24, 0.75);
+        --border-color: rgba(255, 255, 255, 0.1);
+        --border-accent: rgba(212, 175, 55, 0.3);
+        --text-main: #f3f4f6;
+        --text-muted: #9ca3af;
+        --accent-gold: #d4af37;
+        --accent-gold-glow: rgba(212, 175, 55, 0.15);
+        --accent-blue: #00a3ff;
+        --radius-lg: 16px;
+        --radius-md: 12px;
+        --radius-sm: 8px;
+        --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        --font-family: 'Mukta', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+        --nav-height: 80px;
+    }
 
-    <style>
-        /* ==========================================================================
-           GLOBAL STYLES & VARIABLES
-           ========================================================================== */
-        :root {
-            --bg-dark: #090a0f;
-            --bg-card: rgba(18, 20, 29, 0.7);
-            --bg-card-hover: rgba(28, 32, 45, 0.8);
-            --border-color: rgba(255, 255, 255, 0.08);
-            --border-color-gold: rgba(212, 175, 55, 0.3);
-            
-            --text-main: #f3f4f6;
-            --text-muted: #9ca3af;
-            --text-gold: #d4af37;
-            --text-gold-light: #f3e5ab;
-            
-            --accent-gold: #d4af37;
-            --accent-glow: rgba(212, 175, 55, 0.15);
-            
-            --radius-sm: 8px;
-            --radius-md: 16px;
-            --radius-lg: 24px;
-            --radius-full: 9999px;
-            
-            --transition-fast: 0.2s ease;
-            --transition-normal: 0.3s ease;
-            --transition-slow: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-            
-            --font-main: 'Mukta', 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
-            --nav-height: 80px;
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+        font-size: 16px;
+        scroll-padding-top: var(--nav-height);
+    }
+
+    body {
+        background-color: var(--bg-dark);
+        color: var(--text-main);
+        font-family: var(--font-family);
+        line-height: 1.6;
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    button {
+        font-family: inherit;
+        cursor: pointer;
+        border: none;
+        background: none;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 1240px;
+        margin: 0 auto;
+        padding: 0 24px;
+    }
+
+    /* Typography Helper */
+    .section-title {
+        font-size: 2.25rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 1rem;
+        color: #ffffff;
+        letter-spacing: -0.02em;
+    }
+
+    .section-subtitle {
+        text-align: center;
+        color: var(--text-muted);
+        max-width: 650px;
+        margin: 0 auto 3.5rem auto;
+        font-size: 1.1rem;
+    }
+
+    /* Circular Logo Frame Utility */
+    .circle-logo-frame {
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #000;
+        border: 2px solid var(--border-color);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        flex-shrink: 0;
+        transition: var(--transition);
+    }
+
+    .circle-logo-frame.hero-size {
+        width: 90px;
+        height: 90px;
+        border-width: 3px;
+    }
+
+    .circle-logo-frame img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* Language visibility controls */
+    [data-lang="en"] {
+        display: none !important;
+    }
+    body.lang-en [data-lang="ne"] {
+        display: none !important;
+    }
+    body.lang-en [data-lang="en"] {
+        display: inline-block !important;
+    }
+    body.lang-en p[data-lang="en"],
+    body.lang-en div[data-lang="en"],
+    body.lang-en h1[data-lang="en"],
+    body.lang-en h2[data-lang="en"],
+    body.lang-en h3[data-lang="en"],
+    body.lang-en span[data-lang="en"] {
+        display: block !important;
+    }
+
+    /* ==========================================================================
+       NAVBAR
+       ========================================================================== */
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: var(--nav-height);
+        z-index: 1000;
+        transition: var(--transition);
+        background: rgba(8, 9, 10, 0.4);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .navbar.scrolled {
+        background: rgba(12, 14, 18, 0.92);
+        border-bottom: 1px solid var(--border-color);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .nav-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .nav-brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav-brand-symbol {
+        color: var(--text-muted);
+        font-size: 0.9rem;
+        font-weight: 300;
+        user-select: none;
+    }
+
+    .nav-menu {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        list-style: none;
+    }
+
+    .nav-link {
+        position: relative;
+        color: var(--text-muted);
+        font-size: 0.95rem;
+        font-weight: 500;
+        padding: 8px 0;
+        transition: var(--transition);
+    }
+
+    .nav-link:hover {
+        color: #ffffff;
+    }
+
+    .nav-link.active {
+        color: #ffffff;
+        font-weight: 600;
+    }
+
+    .nav-link.active::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: var(--accent-gold);
+        border-radius: 2px;
+        box-shadow: 0 0 8px var(--accent-gold);
+    }
+
+    .nav-actions {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    /* Language Toggle Button */
+    .lang-switch {
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid var(--border-color);
+        padding: 4px;
+        border-radius: 30px;
+        display: flex;
+        gap: 2px;
+    }
+
+    .lang-btn {
+        padding: 4px 10px;
+        font-size: 0.75rem;
+        font-weight: 700;
+        border-radius: 20px;
+        color: var(--text-muted);
+        transition: var(--transition);
+    }
+
+    .lang-btn.active {
+        background: var(--accent-gold);
+        color: #000;
+    }
+
+    .btn-book-nav {
+        background: linear-gradient(135deg, var(--accent-gold), #b89228);
+        color: #000000;
+        padding: 10px 20px;
+        border-radius: var(--radius-sm);
+        font-weight: 700;
+        font-size: 0.9rem;
+        transition: var(--transition);
+        box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+    }
+
+    .btn-book-nav:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(212, 175, 55, 0.35);
+    }
+
+    .mobile-hamburger {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        padding: 5px;
+        z-index: 1001;
+    }
+
+    .mobile-hamburger span {
+        width: 24px;
+        height: 2px;
+        background-color: #ffffff;
+        transition: var(--transition);
+    }
+
+    /* Mobile Menu Drawer */
+    .mobile-drawer {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 320px;
+        height: 100vh;
+        background: var(--bg-surface);
+        z-index: 999;
+        padding: 100px 30px 40px 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        transition: var(--transition);
+        border-left: 1px solid var(--border-color);
+        box-shadow: -10px 0 30px rgba(0,0,0,0.8);
+    }
+
+    .mobile-drawer.open {
+        right: 0;
+    }
+
+    .mobile-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0,0,0,0.7);
+        backdrop-filter: blur(4px);
+        z-index: 998;
+        opacity: 0;
+        pointer-events: none;
+        transition: var(--transition);
+    }
+
+    .mobile-overlay.open {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    /* ==========================================================================
+       HERO SECTION
+       ========================================================================== */
+    .hero {
+        position: relative;
+        min-height: 100vh;
+        padding-top: calc(var(--nav-height) + 40px);
+        padding-bottom: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: radial-gradient(circle at 50% 30%, rgba(212, 175, 55, 0.08) 0%, rgba(8, 9, 10, 1) 70%);
+        overflow: hidden;
+    }
+
+    .hero-bg-glow {
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        background: radial-gradient(circle, rgba(0, 163, 255, 0.08) 0%, transparent 70%);
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+    }
+
+    .hero-content {
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        max-width: 860px;
+    }
+
+    .hero-brand-lockup {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 28px;
+    }
+
+    .hero-brand-lockup .circle-logo-frame {
+        box-shadow: 0 0 25px rgba(212, 175, 55, 0.15);
+    }
+
+    .hero-symbol {
+        font-size: 1.5rem;
+        color: var(--text-muted);
+        font-weight: 300;
+        user-select: none;
+    }
+
+    .hero-location {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid var(--border-color);
+        padding: 6px 16px;
+        border-radius: 30px;
+        font-size: 0.85rem;
+        color: var(--accent-gold);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 24px;
+    }
+
+    .hero-title {
+        font-size: 3.2rem;
+        font-weight: 800;
+        line-height: 1.2;
+        color: #ffffff;
+        margin-bottom: 20px;
+        letter-spacing: -0.02em;
+    }
+
+    .hero-desc {
+        font-size: 1.2rem;
+        color: var(--text-muted);
+        margin-bottom: 36px;
+        max-width: 740px;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 400;
+    }
+
+    .hero-btns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    .btn-primary {
+        background: linear-gradient(135deg, var(--accent-gold), #b89228);
+        color: #000;
+        padding: 14px 32px;
+        border-radius: var(--radius-sm);
+        font-weight: 700;
+        font-size: 1rem;
+        transition: var(--transition);
+        box-shadow: 0 4px 20px rgba(212, 175, 55, 0.25);
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 25px rgba(212, 175, 55, 0.4);
+    }
+
+    .btn-secondary {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid var(--border-color);
+        color: #ffffff;
+        padding: 14px 32px;
+        border-radius: var(--radius-sm);
+        font-weight: 600;
+        font-size: 1rem;
+        transition: var(--transition);
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .btn-secondary:hover {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: rgba(255, 255, 255, 0.2);
+        transform: translateY(-2px);
+    }
+
+    /* ==========================================================================
+       ABOUT SECTION
+       ========================================================================== */
+    .about {
+        padding: 100px 0;
+        background: var(--bg-surface);
+        position: relative;
+        border-top: 1px solid var(--border-color);
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .about-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .about-card {
+        background: var(--bg-card);
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius-lg);
+        padding: 40px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    .workflow {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 40px;
+        flex-wrap: wrap;
+        gap: 15px;
+        position: relative;
+    }
+
+    .workflow-step {
+        flex: 1;
+        min-width: 140px;
+        background: rgba(255,255,255,0.03);
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius-md);
+        padding: 20px 15px;
+        text-align: center;
+        transition: var(--transition);
+    }
+
+    .workflow-step:hover {
+        border-color: var(--accent-gold);
+        transform: translateY(-4px);
+    }
+
+    .workflow-step-num {
+        font-size: 0.8rem;
+        color: var(--accent-gold);
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    .workflow-step-title {
+        font-size: 1.05rem;
+        font-weight: 700;
+        color: #fff;
+    }
+
+    /* ==========================================================================
+       SERVICES SECTION
+       ========================================================================== */
+    .services {
+        padding: 100px 0;
+    }
+
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 24px;
+    }
+
+    .service-card {
+        background: var(--bg-card);
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius-md);
+        padding: 30px;
+        transition: var(--transition);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service-card:hover {
+        border-color: var(--accent-gold-glow);
+        transform: translateY(-4px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    }
+
+    .service-num {
+        font-size: 0.9rem;
+        font-weight: 800;
+        color: var(--accent-gold);
+        margin-bottom: 12px;
+        letter-spacing: 0.05em;
+    }
+
+    .service-title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 10px;
+    }
+
+    .service-desc {
+        color: var(--text-muted);
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    /* ==========================================================================
+       PACKAGES SECTION
+       ========================================================================== */
+    .packages {
+        padding: 100px 0;
+        background: var(--bg-surface);
+        border-top: 1px solid var(--border-color);
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .packages-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        gap: 24px;
+        align-items: stretch;
+    }
+
+    .pkg-card {
+        background: var(--bg-card);
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius-lg);
+        padding: 36px 28px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        transition: var(--transition);
+    }
+
+    .pkg-card.featured {
+        border-color: var(--accent-gold);
+        background: linear-gradient(180deg, rgba(212,175,55,0.05) 0%, var(--bg-card) 100%);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    .pkg-header {
+        margin-bottom: 24px;
+    }
+
+    .pkg-badge {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--accent-gold);
+        font-weight: 700;
+        margin-bottom: 8px;
+        display: block;
+    }
+
+    .pkg-title {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 12px;
+    }
+
+    .pkg-price {
+        font-size: 1.8rem;
+        font-weight: 800;
+        color: var(--accent-gold);
+    }
+
+    .pkg-features {
+        list-style: none;
+        margin-bottom: 30px;
+        flex-grow: 1;
+    }
+
+    .pkg-features li {
+        position: relative;
+        padding-left: 24px;
+        margin-bottom: 12px;
+        color: var(--text-main);
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+
+    .pkg-features li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: var(--accent-gold);
+        font-weight: bold;
+    }
+
+    .btn-book-pkg {
+        width: 100%;
+        background: rgba(255,255,255,0.08);
+        border: 1px solid var(--border-color);
+        color: #ffffff;
+        padding: 12px 20px;
+        border-radius: var(--radius-sm);
+        font-weight: 700;
+        text-align: center;
+        transition: var(--transition);
+        display: inline-block;
+    }
+
+    .pkg-card.featured .btn-book-pkg {
+        background: linear-gradient(135deg, var(--accent-gold), #b89228);
+        color: #000;
+        border: none;
+    }
+
+    .btn-book-pkg:hover {
+        background: var(--accent-gold);
+        color: #000;
+        border-color: var(--accent-gold);
+    }
+
+    /* ==========================================================================
+       COMPARISON TABLE
+       ========================================================================== */
+    .comparison {
+        padding: 100px 0;
+    }
+
+    .table-wrapper {
+        overflow-x: auto;
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius-lg);
+        background: var(--bg-card);
+    }
+
+    .comparison-table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+        min-width: 700px;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 18px 24px;
+        border-bottom: 1px solid var(--border-color);
+        font-size: 0.95rem;
+    }
+
+    .comparison-table th {
+        background: rgba(255, 255, 255, 0.02);
+        color: #ffffff;
+        font-weight: 700;
+    }
+
+    .comparison-table tr:last-child td {
+        border-bottom: none;
+    }
+
+    .check-icon {
+        color: var(--accent-gold);
+        font-weight: bold;
+    }
+
+    .cross-icon {
+        color: var(--text-muted);
+        opacity: 0.5;
+    }
+
+    /* ==========================================================================
+       RECEIVES & PROCESS
+       ========================================================================== */
+    .receives {
+        padding: 100px 0;
+        background: var(--bg-surface);
+        border-top: 1px solid var(--border-color);
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .receives-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 20px;
+    }
+
+    .receive-card {
+        background: var(--bg-card);
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius-md);
+        padding: 24px;
+        text-align: center;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .notice-banner {
+        margin-top: 30px;
+        padding: 16px;
+        background: rgba(212, 175, 55, 0.08);
+        border: 1px solid var(--accent-gold-glow);
+        border-radius: var(--radius-md);
+        text-align: center;
+        color: var(--accent-gold);
+        font-size: 0.95rem;
+    }
+
+    .process {
+        padding: 100px 0;
+    }
+
+    .process-steps {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    .process-card {
+        flex: 1;
+        min-width: 160px;
+        background: var(--bg-card);
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius-md);
+        padding: 24px 16px;
+        text-align: center;
+    }
+
+    .process-title {
+        color: var(--accent-gold);
+        font-weight: 800;
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+    }
+
+    .process-desc {
+        font-size: 0.85rem;
+        color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       PORTFOLIO & TERMS
+       ========================================================================== */
+    .portfolio {
+        padding: 100px 0;
+        background: var(--bg-surface);
+        border-top: 1px solid var(--border-color);
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .empty-portfolio {
+        background: var(--bg-card);
+        border: 1px dashed var(--border-color);
+        border-radius: var(--radius-lg);
+        padding: 60px 20px;
+        text-align: center;
+        color: var(--text-muted);
+        font-size: 1.1rem;
+    }
+
+    .terms {
+        padding: 100px 0;
+    }
+
+    .terms-card {
+        background: var(--bg-card);
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius-lg);
+        padding: 40px;
+    }
+
+    .terms-list {
+        list-style: none;
+    }
+
+    .terms-list li {
+        position: relative;
+        padding-left: 24px;
+        margin-bottom: 16px;
+        color: var(--text-muted);
+        font-size: 0.95rem;
+    }
+
+    .terms-list li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: var(--accent-gold);
+        font-size: 1.2rem;
+        line-height: 1;
+    }
+
+    /* ==========================================================================
+       FAQ
+       ========================================================================== */
+    .faq {
+        padding: 100px 0;
+        background: var(--bg-surface);
+        border-top: 1px solid var(--border-color);
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .faq-accordion {
+        max-width: 800px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .faq-item {
+        background: var(--bg-card);
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius-md);
+        overflow: hidden;
+        transition: var(--transition);
+    }
+
+    .faq-button {
+        width: 100%;
+        padding: 20px 24px;
+        text-align: left;
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 1.05rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .faq-icon {
+        font-size: 1.2rem;
+        color: var(--accent-gold);
+        transition: var(--transition);
+    }
+
+    .faq-item[open] .faq-icon {
+        transform: rotate(45deg);
+    }
+
+    .faq-content {
+        padding: 0 24px 20px 24px;
+        color: var(--text-muted);
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    /* ==========================================================================
+       CONTACT & CTA
+       ========================================================================== */
+    .contact {
+        padding: 100px 0;
+    }
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+    }
+
+    .contact-card {
+        background: var(--bg-card);
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius-lg);
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-card .circle-logo-frame {
+        margin-bottom: 20px;
+    }
+
+    .contact-name {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 16px;
+    }
+
+    .contact-detail {
+        color: var(--text-muted);
+        margin-bottom: 8px;
+        font-size: 1rem;
+    }
+
+    .btn-call {
+        margin-top: 20px;
+        background: rgba(255,255,255,0.08);
+        border: 1px solid var(--border-color);
+        color: #fff;
+        padding: 12px 24px;
+        border-radius: var(--radius-sm);
+        font-weight: 600;
+        width: 100%;
+        transition: var(--transition);
+    }
+
+    .btn-call:hover {
+        background: #ffffff;
+        color: #000;
+    }
+
+    .btn-wa {
+        margin-top: 20px;
+        background: #25d366;
+        color: #000000;
+        padding: 12px 24px;
+        border-radius: var(--radius-sm);
+        font-weight: 700;
+        width: 100%;
+        transition: var(--transition);
+    }
+
+    .btn-wa:hover {
+        opacity: 0.9;
+    }
+
+    .btn-email {
+        margin-top: 10px;
+        background: rgba(255,255,255,0.08);
+        border: 1px solid var(--border-color);
+        color: #fff;
+        padding: 12px 24px;
+        border-radius: var(--radius-sm);
+        font-weight: 600;
+        width: 100%;
+        transition: var(--transition);
+    }
+
+    .btn-email:hover {
+        background: rgba(255,255,255,0.2);
+    }
+
+    .final-cta {
+        padding: 80px 0;
+        background: radial-gradient(circle at 50% 50%, rgba(212,175,55,0.1) 0%, var(--bg-surface) 100%);
+        border-top: 1px solid var(--border-color);
+        text-align: center;
+    }
+
+    .final-cta-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 16px;
+    }
+
+    .final-cta-desc {
+        color: var(--text-muted);
+        max-width: 600px;
+        margin: 0 auto 30px auto;
+    }
+
+    /* ==========================================================================
+       FOOTER
+       ========================================================================== */
+    .footer {
+        padding: 60px 0 30px 0;
+        background: var(--bg-dark);
+        border-top: 1px solid var(--border-color);
+        color: var(--text-muted);
+        font-size: 0.9rem;
+    }
+
+    .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+
+    .footer-brand-title {
+        color: #fff;
+        font-weight: 700;
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+    }
+
+    .footer-socials {
+        display: flex;
+        gap: 16px;
+    }
+
+    .social-tag {
+        color: var(--text-muted);
+        cursor: default;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        padding-top: 30px;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+        font-size: 0.85rem;
+    }
+
+    /* Back to top button */
+    .back-to-top {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: var(--accent-gold);
+        color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        opacity: 0;
+        pointer-events: none;
+        transition: var(--transition);
+        z-index: 900;
+    }
+
+    .back-to-top.visible {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    /* ==========================================================================
+       RESPONSIVE BREAKPOINTS
+       ========================================================================== */
+    @media (max-width: 992px) {
+        .nav-menu {
+            display: none;
         }
-
-        *, *::before, *::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
+        .mobile-hamburger {
+            display: flex;
         }
-
-        html {
-            scroll-behavior: smooth;
-            font-size: 16px;
-        }
-
-        body {
-            background-color: var(--bg-dark);
-            color: var(--text-main);
-            font-family: var(--font-main);
-            line-height: 1.6;
-            overflow-x: hidden;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        /* Container Layout */
-        .container {
-            width: 100%;
-            max-width: 1280px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
-
-        .section-padding {
-            padding: 6rem 0;
-        }
-
-        /* Typography */
-        .section-header {
-            text-align: center;
-            max-width: 700px;
-            margin: 0 auto 4rem auto;
-        }
-
-        .section-subtitle {
-            color: var(--text-gold);
-            font-weight: 600;
-            font-size: 0.95rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 0.5rem;
-            display: block;
-        }
-
-        .section-title {
+        .hero-title {
             font-size: 2.5rem;
-            font-weight: 700;
-            line-height: 1.2;
-            color: #ffffff;
-            margin-bottom: 1rem;
         }
-
-        .section-desc {
-            color: var(--text-muted);
-            font-size: 1.1rem;
+        .process-steps {
+            flex-direction: column;
         }
+    }
 
-        /* Buttons */
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.6rem;
-            padding: 0.85rem 1.8rem;
+    @media (max-width: 600px) {
+        .hero-title {
+            font-size: 2rem;
+        }
+        .hero-desc {
             font-size: 1rem;
-            font-weight: 600;
-            border-radius: var(--radius-full);
-            transition: all var(--transition-normal);
-            cursor: pointer;
-            border: 1px solid transparent;
-            font-family: var(--font-main);
         }
-
-        .btn-primary {
-            background: linear-gradient(135deg, #d4af37 0%, #aa820a 100%);
-            color: #000;
-            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.25);
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 25px rgba(212, 175, 55, 0.4);
-            background: linear-gradient(135deg, #e5be48 0%, #bb931b 100%);
-        }
-
-        .btn-secondary {
-            background: rgba(255, 255, 255, 0.05);
-            color: var(--text-main);
-            border-color: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(10px);
-        }
-
-        .btn-secondary:hover {
-            background: rgba(255, 255, 255, 0.1);
-            border-color: var(--text-gold);
-            color: var(--text-gold-light);
-            transform: translateY(-2px);
-        }
-
-        /* Circle Logo Wrapper Fix */
-        .circle-logo {
+        .circle-logo-frame.hero-size {
             width: 70px;
             height: 70px;
-            border-radius: 50%;
-            background: rgba(0, 0, 0, 0.6);
-            border: 2px solid var(--border-color-gold);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            padding: 6px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-            flex-shrink: 0;
-            transition: transform var(--transition-normal);
         }
-
-        .circle-logo:hover {
-            transform: scale(1.05);
-            border-color: var(--accent-gold);
-        }
-
-        .circle-logo img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            border-radius: 50%;
-        }
-
-        /* ==========================================================================
-           NAVBAR
-           ========================================================================== */
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: var(--nav-height);
-            z-index: 1000;
-            transition: all var(--transition-normal);
-            border-bottom: 1px solid transparent;
-        }
-
-        .navbar.scrolled {
-            background: rgba(9, 10, 15, 0.85);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border-bottom-color: var(--border-color);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-        }
-
-        .nav-container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            height: 100%;
-        }
-
-        .brand-lockup {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
-
-        .brand-lockup .circle-logo {
-            width: 44px;
-            height: 44px;
-            padding: 3px;
-        }
-
-        .brand-sep {
-            color: var(--text-gold);
-            font-size: 0.9rem;
-            font-weight: 300;
-            opacity: 0.7;
-            user-select: none;
-        }
-
-        .nav-links {
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-            list-style: none;
-        }
-
-        .nav-link {
-            position: relative;
-            font-size: 0.95rem;
-            font-weight: 500;
-            color: var(--text-muted);
-            transition: color var(--transition-fast);
-            padding: 0.5rem 0;
-        }
-
-        .nav-link:hover {
-            color: var(--text-main);
-        }
-
-        .nav-link.active {
-            color: var(--text-gold-light);
-            font-weight: 600;
-        }
-
-        .nav-link.active::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background: var(--accent-gold);
-            border-radius: 2px;
-            box-shadow: 0 0 8px var(--accent-gold);
-        }
-
-        .mobile-toggle {
-            display: none;
-            background: none;
-            border: none;
-            color: var(--text-main);
-            cursor: pointer;
-            padding: 0.5rem;
-            z-index: 1001;
-        }
-
-        /* Mobile Menu */
-        .mobile-menu {
-            position: fixed;
-            top: 0;
-            right: -100%;
-            width: 80%;
-            max-width: 320px;
-            height: 100vh;
-            background: rgba(14, 16, 24, 0.96);
-            backdrop-filter: blur(20px);
-            z-index: 999;
-            padding: 6rem 2rem 2rem 2rem;
-            transition: right var(--transition-slow);
-            box-shadow: -10px 0 30px rgba(0, 0, 0, 0.8);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .mobile-menu.active {
-            right: 0;
-        }
-
-        .mobile-nav-links {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-
-        .mobile-nav-link {
-            font-size: 1.2rem;
-            font-weight: 500;
-            color: var(--text-muted);
-            display: block;
-        }
-
-        .mobile-nav-link.active {
-            color: var(--text-gold);
-            font-weight: 700;
-        }
-
-        .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100vh;
-            background: rgba(0, 0, 0, 0.7);
-            backdrop-filter: blur(4px);
-            z-index: 998;
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity var(--transition-normal);
-        }
-
-        .overlay.active {
-            opacity: 1;
-            pointer-events: auto;
-        }
-
-        /* ==========================================================================
-           HERO SECTION
-           ========================================================================== */
-        .hero {
-            position: relative;
-            min-height: 100vh;
-            padding-top: calc(var(--nav-height) + 2rem);
-            padding-bottom: 4rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: radial-gradient(circle at 50% 20%, rgba(212, 175, 55, 0.08) 0%, rgba(9, 10, 15, 1) 70%);
-            overflow: hidden;
-        }
-
-        .hero-bg-glow {
-            position: absolute;
-            top: 30%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(212, 175, 55, 0.12) 0%, rgba(0,0,0,0) 70%);
-            filter: blur(50px);
-            pointer-events: none;
-        }
-
-        .hero-content {
-            text-align: center;
-            position: relative;
-            z-index: 2;
-            max-width: 900px;
-        }
-
-        .hero-lockup {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 1.5rem;
-            margin-bottom: 2.5rem;
-        }
-
-        .hero-lockup .circle-logo {
-            width: 90px;
-            height: 90px;
-            padding: 8px;
-            box-shadow: 0 0 25px rgba(212, 175, 55, 0.2);
-        }
-
-        .hero-lockup .brand-sep {
-            font-size: 1.5rem;
-            font-weight: 300;
-        }
-
-        .hero-title {
-            font-size: clamp(2.2rem, 5vw, 3.8rem);
-            font-weight: 800;
-            line-height: 1.25;
-            color: #ffffff;
-            margin-bottom: 1.5rem;
-            letter-spacing: -0.5px;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
-        }
-
-        .hero-desc {
-            font-size: clamp(1.05rem, 2vw, 1.25rem);
-            color: var(--text-muted);
-            margin-bottom: 2rem;
-            max-width: 780px;
-            margin-left: auto;
-            margin-right: auto;
-            font-weight: 400;
-        }
-
-        .hero-location {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: var(--text-gold);
-            font-size: 0.9rem;
-            font-weight: 600;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            margin-bottom: 2.5rem;
-            background: rgba(212, 175, 55, 0.08);
-            padding: 0.4rem 1.2rem;
-            border-radius: var(--radius-full);
-            border: 1px solid rgba(212, 175, 55, 0.2);
-        }
-
-        .hero-cta {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 1.2rem;
-            flex-wrap: wrap;
-        }
-
-        /* ==========================================================================
-           ABOUT SECTION
-           ========================================================================== */
-        .about-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-lg);
-            padding: 3.5rem 2.5rem;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-        }
-
-        .about-text {
-            font-size: 1.15rem;
-            color: var(--text-main);
-            text-align: center;
-            max-width: 850px;
-            margin: 0 auto 3.5rem auto;
-            line-height: 1.8;
-        }
-
-        .workflow-title {
-            text-align: center;
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: var(--text-gold);
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            margin-bottom: 2rem;
-        }
-
-        .workflow-grid {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-
-        .workflow-step {
-            flex: 1;
-            min-width: 140px;
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-md);
-            padding: 1.2rem;
-            text-align: center;
-            font-weight: 600;
-            color: var(--text-main);
-            transition: all var(--transition-normal);
-        }
-
-        .workflow-step:hover {
-            border-color: var(--border-color-gold);
-            background: rgba(212, 175, 55, 0.05);
-            transform: translateY(-3px);
-        }
-
-        .workflow-arrow {
-            color: var(--text-gold);
-            opacity: 0.5;
-            font-size: 1.2rem;
-        }
-
-        /* ==========================================================================
-           SERVICES SECTION
-           ========================================================================== */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .service-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-md);
-            padding: 2rem;
-            transition: all var(--transition-normal);
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .service-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background: linear-gradient(90deg, transparent, var(--accent-gold), transparent);
-            opacity: 0;
-            transition: opacity var(--transition-normal);
-        }
-
-        .service-card:hover {
-            border-color: rgba(212, 175, 55, 0.3);
-            transform: translateY(-4px);
-            background: var(--bg-card-hover);
-        }
-
-        .service-card:hover::before {
-            opacity: 1;
-        }
-
-        .service-num {
-            font-size: 0.85rem;
-            font-weight: 700;
-            color: var(--text-gold);
-            letter-spacing: 1px;
-        }
-
-        .service-icon {
-            width: 44px;
-            height: 44px;
-            color: var(--text-gold);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: rgba(212, 175, 55, 0.08);
-            border-radius: var(--radius-sm);
-        }
-
-        .service-title {
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: #ffffff;
-            line-height: 1.3;
-        }
-
-        .service-desc {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-            line-height: 1.5;
-        }
-
-        /* ==========================================================================
-           PACKAGES SECTION
-           ========================================================================== */
-        .packages-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            align-items: stretch;
-        }
-
-        .package-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-lg);
-            padding: 2.5rem 2rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            position: relative;
-            transition: all var(--transition-normal);
-        }
-
-        .package-card.featured {
-            border-color: var(--border-color-gold);
-            background: linear-gradient(180deg, rgba(212, 175, 55, 0.06) 0%, rgba(18, 20, 29, 0.8) 100%);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
-        }
-
-        .package-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-        }
-
-        .package-header {
-            margin-bottom: 2rem;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 1.5rem;
-        }
-
-        .package-num {
-            font-size: 0.8rem;
-            font-weight: 700;
-            color: var(--text-gold);
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            display: block;
-            margin-bottom: 0.5rem;
-        }
-
-        .package-name {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #ffffff;
-            margin-bottom: 1rem;
-        }
-
-        .package-price {
+        .section-title {
             font-size: 1.8rem;
-            font-weight: 800;
-            color: var(--text-gold-light);
-            line-height: 1.2;
         }
-
-        .package-features {
-            list-style: none;
-            margin-bottom: 2.5rem;
-            display: flex;
-            flex-direction: column;
-            gap: 0.9rem;
-            flex-grow: 1;
-        }
-
-        .package-feature {
-            display: flex;
-            align-items: flex-start;
-            gap: 0.75rem;
-            font-size: 0.95rem;
-            color: var(--text-main);
-        }
-
-        .package-feature svg {
-            width: 18px;
-            height: 18px;
-            color: var(--text-gold);
-            flex-shrink: 0;
-            margin-top: 3px;
-        }
-
-        /* ==========================================================================
-           PACKAGE COMPARISON TABLE
-           ========================================================================== */
-        .comparison-wrapper {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-lg);
-            overflow-x: auto;
-            backdrop-filter: blur(10px);
-            margin-top: 4rem;
-        }
-
-        .comparison-table {
-            width: 100%;
-            border-collapse: collapse;
-            text-align: left;
-            min-width: 800px;
-        }
-
-        .comparison-table th,
-        .comparison-table td {
-            padding: 1.2rem 1.5rem;
-            border-bottom: 1px solid var(--border-color);
-            font-size: 0.95rem;
-        }
-
-        .comparison-table th {
-            background: rgba(255, 255, 255, 0.03);
-            color: #ffffff;
-            font-weight: 700;
-            font-size: 1rem;
-        }
-
-        .comparison-table th:first-child {
-            width: 25%;
-        }
-
-        .comparison-table td {
-            color: var(--text-muted);
-        }
-
-        .comparison-table td:first-child {
-            color: var(--text-main);
-            font-weight: 600;
-        }
-
-        .check-icon {
-            color: #10b981;
-            font-weight: bold;
-        }
-
-        .cross-icon {
-            color: #ef4444;
-            font-weight: bold;
-        }
-
-        /* ==========================================================================
-           WHAT YOU RECEIVE / PROCESS / PORTFOLIO
-           ========================================================================== */
-        .deliverables-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .deliverable-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-md);
-            padding: 1.5rem;
-            text-align: center;
-            transition: all var(--transition-normal);
-        }
-
-        .deliverable-card:hover {
-            border-color: var(--border-color-gold);
-            transform: translateY(-3px);
-        }
-
-        .deliverable-icon {
-            width: 48px;
-            height: 48px;
-            margin: 0 auto 1rem auto;
-            color: var(--text-gold);
-        }
-
-        .deliverable-title {
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: #ffffff;
-        }
-
-        /* Process Timeline */
-        .process-timeline {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 1.5rem;
-            position: relative;
-        }
-
-        .process-step {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-md);
-            padding: 1.8rem 1.2rem;
-            text-align: center;
-            position: relative;
-        }
-
-        .process-num {
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            background: rgba(212, 175, 55, 0.15);
-            color: var(--text-gold);
-            font-weight: 700;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 1rem auto;
-            border: 1px solid var(--border-color-gold);
-        }
-
-        .process-title {
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: #ffffff;
-            margin-bottom: 0.5rem;
-        }
-
-        .process-desc {
-            font-size: 0.88rem;
-            color: var(--text-muted);
-        }
-
-        /* Portfolio */
-        .portfolio-filters {
-            display: flex;
-            justify-content: center;
-            gap: 0.75rem;
-            flex-wrap: wrap;
-            margin-bottom: 2.5rem;
-        }
-
-        .filter-btn {
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid var(--border-color);
-            color: var(--text-muted);
-            padding: 0.5rem 1.2rem;
-            border-radius: var(--radius-full);
-            font-size: 0.9rem;
-            font-weight: 500;
-            cursor: pointer;
-            transition: all var(--transition-fast);
-            font-family: var(--font-main);
-        }
-
-        .filter-btn:hover,
-        .filter-btn.active {
-            background: var(--text-gold);
-            color: #000;
-            border-color: var(--text-gold);
-            font-weight: 600;
-        }
-
-        .portfolio-empty {
-            background: var(--bg-card);
-            border: 1px dashed var(--border-color-gold);
-            border-radius: var(--radius-lg);
-            padding: 4rem 2rem;
-            text-align: center;
-            color: var(--text-muted);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .portfolio-empty svg {
-            width: 48px;
-            height: 48px;
-            color: var(--text-gold);
-            margin-bottom: 1rem;
-            opacity: 0.7;
-        }
-
-        /* ==========================================================================
-           TERMS & FAQ
-           ========================================================================== */
-        .terms-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-lg);
-            padding: 2.5rem;
-        }
-
-        .terms-list {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 1.2rem;
-        }
-
-        .terms-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-            color: var(--text-muted);
-            font-size: 1rem;
-            line-height: 1.6;
-        }
-
-        .terms-item svg {
-            width: 20px;
-            height: 20px;
-            color: var(--text-gold);
-            flex-shrink: 0;
-            margin-top: 2px;
-        }
-
-        /* FAQ Accordion */
-        .faq-accordion {
-            max-width: 800px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        .faq-item {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-md);
-            overflow: hidden;
-            transition: border-color var(--transition-fast);
-        }
-
-        .faq-item.active {
-            border-color: var(--border-color-gold);
-        }
-
-        .faq-btn {
-            width: 100%;
-            padding: 1.5rem;
-            text-align: left;
-            background: none;
-            border: none;
-            color: #ffffff;
-            font-size: 1.1rem;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 1rem;
-            cursor: pointer;
-            font-family: var(--font-main);
-        }
-
-        .faq-icon {
-            width: 20px;
-            height: 20px;
-            color: var(--text-gold);
-            transition: transform var(--transition-normal);
-            flex-shrink: 0;
-        }
-
-        .faq-item.active .faq-icon {
-            transform: rotate(45deg);
-        }
-
-        .faq-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height var(--transition-normal);
-            padding: 0 1.5rem;
-            color: var(--text-muted);
-            font-size: 1rem;
-            line-height: 1.6;
-        }
-
-        .faq-item.active .faq-content {
-            padding: 0 1.5rem 1.5rem 1.5rem;
-        }
-
-        /* ==========================================================================
-           CONTACT SECTION
-           ========================================================================== */
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2rem;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .contact-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-lg);
-            padding: 2.5rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            transition: all var(--transition-normal);
-        }
-
-        .contact-card:hover {
-            border-color: var(--border-color-gold);
-            transform: translateY(-4px);
-        }
-
-        .contact-card .circle-logo {
-            width: 80px;
-            height: 80px;
-            padding: 6px;
-            margin-bottom: 1.5rem;
-        }
-
-        .contact-name {
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: #ffffff;
-            margin-bottom: 1rem;
-        }
-
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-            margin-bottom: 2rem;
-            color: var(--text-muted);
-            font-size: 1.05rem;
-        }
-
-        .contact-actions {
-            display: flex;
-            flex-direction: column;
-            gap: 0.8rem;
-            width: 100%;
-        }
-
-        /* Final CTA */
-        .final-cta {
-            background: linear-gradient(180deg, rgba(18, 20, 29, 0.4) 0%, rgba(212, 175, 55, 0.08) 100%);
-            border: 1px solid var(--border-color-gold);
-            border-radius: var(--radius-lg);
-            padding: 4rem 2rem;
-            text-align: center;
-            margin-top: 5rem;
-        }
-
-        .final-cta-title {
-            font-size: 2rem;
-            font-weight: 800;
-            color: #ffffff;
-            margin-bottom: 1rem;
-        }
-
-        .final-cta-desc {
-            color: var(--text-muted);
-            font-size: 1.1rem;
-            max-width: 600px;
-            margin: 0 auto 2rem auto;
-        }
-
-        /* ==========================================================================
-           FOOTER
-           ========================================================================== */
-        .footer {
-            background: #050608;
-            border-top: 1px solid var(--border-color);
-            padding: 4rem 0 2rem 0;
-            color: var(--text-muted);
-            font-size: 0.95rem;
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2.5rem;
-            margin-bottom: 3rem;
-        }
-
-        .footer-brand .brand-lockup {
-            margin-bottom: 1rem;
-        }
-
-        .footer-brand p {
-            line-height: 1.6;
-        }
-
-        .footer-title {
-            color: #ffffff;
-            font-size: 1.1rem;
-            font-weight: 700;
-            margin-bottom: 1.2rem;
-        }
-
-        .footer-contacts {
-            display: flex;
-            flex-direction: column;
-            gap: 0.8rem;
-        }
-
-        .social-labels {
-            display: flex;
-            gap: 1rem;
-            list-style: none;
-        }
-
-        .social-label {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 0.4rem 1rem;
-            border-radius: var(--radius-sm);
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            border: 1px solid var(--border-color);
-            cursor: default;
-        }
-
-        .footer-bottom {
-            border-top: 1px solid var(--border-color);
-            padding-top: 2rem;
-            text-align: center;
-            font-size: 0.88rem;
-        }
-
-        /* Floating Back To Top */
-        .back-to-top {
-            position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            background: rgba(18, 20, 29, 0.9);
-            border: 1px solid var(--border-color-gold);
-            color: var(--text-gold);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            opacity: 0;
-            visibility: hidden;
-            transition: all var(--transition-normal);
-            z-index: 900;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.5);
-        }
-
-        .back-to-top.visible {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .back-to-top:hover {
-            background: var(--text-gold);
-            color: #000;
-            transform: translateY(-3px);
-        }
-
-        /* ==========================================================================
-           RESPONSIVE MEDIA QUERIES
-           ========================================================================== */
-        @media (max-width: 992px) {
-            .nav-links, .nav-cta {
-                display: none;
-            }
-            .mobile-toggle {
-                display: block;
-            }
-            .workflow-arrow {
-                display: none;
-            }
-            .workflow-grid {
-                flex-direction: column;
-            }
-            .workflow-step {
-                width: 100%;
-            }
-        }
-
-        @media (max-width: 600px) {
-            .section-padding {
-                padding: 4rem 0;
-            }
-            .section-title {
-                font-size: 2rem;
-            }
-            .hero-lockup .circle-logo {
-                width: 65px;
-                height: 65px;
-            }
-            .hero-cta {
-                flex-direction: column;
-                width: 100%;
-            }
-            .btn {
-                width: 100%;
-            }
-            .about-card, .contact-card {
-                padding: 1.8rem 1.2rem;
-            }
-            .package-card {
-                padding: 2rem 1.5rem;
-            }
-        }
-
-        /* Reduced Motion */
-        @media (prefers-reduced-motion: reduce) {
-            html {
-                scroll-behavior: auto;
-            }
-            *, *::before, *::after {
-                animation-duration: 0.01ms !important;
-                animation-iteration-count: 1 !important;
-                transition-duration: 0.01ms !important;
-            }
-        }
-    </style>
-</head>
-<body>
-
-    <!-- NAVBAR -->
-    <nav class="navbar" id="navbar">
-        <div class="container nav-container">
-            <a href="#hero" class="brand-lockup" aria-label="मुख्यपृष्ठ">
-                <div class="circle-logo">
-                    <img src="sahara-tv-hd-logo.png" alt="SAHARA TV HD Logo">
-                </div>
-                <span class="brand-sep">×</span>
-                <div class="circle-logo">
-                    <img src="western-editors-logo.png" alt="WESTERN EDITORS Logo">
-                </div>
-            </a>
-
-            <ul class="nav-links">
-                <li><a href="#hero" class="nav-link active">मुख्यपृष्ठ</a></li>
-                <li><a href="#about" class="nav-link">परिचय</a></li>
-                <li><a href="#services" class="nav-link">सेवाहरू</a></li>
-                <li><a href="#packages" class="nav-link">प्याकेज</a></li>
-                <li><a href="#portfolio" class="nav-link">हाम्रो काम</a></li>
-                <li><a href="#faq" class="nav-link">FAQ</a></li>
-                <li><a href="#contact" class="nav-link">सम्पर्क</a></li>
-            </ul>
-
-            <div class="nav-cta">
-                <a href="https://wa.me/9779716272953?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%BE%E0%A4%B0%20Western%20Editors%2C%20%E0%A4%AE%20event%20coverage%20%E0%A4%A4%E0%A4%A5%E0%A4%BE%20promotional%20packages%20%E0%A4%AC%E0%A4%BE%E0%A4%B0%E0%A5%87%20quotation%20%E0%A4%B0%20%E0%A4%A5%E0%A4%AA%20%E0%A4%9C%E0%A4%BE%E0%A4%A8%E0%A4%95%E0%A4%BE%E0%A4%B0%E0%A5%80%20%E0%A4%B2%E0%A4%BF%E0%A4%A8%20%E0%A4%9A%E0%A4%BE%E0%A4%B9%E0%A4%A3%E0%A5%8D%E0%A4%9B%E0%A5%81%E0%A4%A2%E0%A4%BE%E0%A4%82%E0%A4%A6%E0%A4%9B%E0%A5%81%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%97%E0%A4%A6%E0%A4%B0%E0%A5%8D%E0%A4%B6%E0%A4%A8%E0%A4%95%E0%A5%8B%20%E0%A4%B2%E0%A4%BE%E0%A4%97%E0%A4%BF%E0%A4%A7%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%AC%E0%A4%BE%E0%A4%A6%E0%A5%8D%E0%A4%B0" target="_blank" class="btn btn-primary" style="padding: 0.6rem 1.4rem; font-size: 0.9rem;">Book Now</a>
+        .btn-book-nav {
+            display: none;
+        }
+    }
+</style>
+
+
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+    <div class="container nav-container">
+        <div class="nav-brand">
+            <div class="circle-logo-frame">
+                <img src="assets/sahara-tv-hd-logo.png" alt="SAHARA TV HD Logo" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100\' height=\'100\' viewBox=\'0 0 100 100\'><rect width=\'100\' height=\'100\' fill=\'%230b0c10\'/><text x=\'50%\' y=\'55%\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%23d4af37\' font-size=\'14\' font-family=\'sans-serif\' font-weight=\'bold\'>SAHARA</text></svg>';">
+            </div>
+            <span class="nav-brand-symbol">×</span>
+            <div class="circle-logo-frame">
+                <img src="assets/western-editors-logo.png" alt="WESTERN EDITORS Logo" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100\' height=\'100\' viewBox=\'0 0 100 100\'><rect width=\'100\' height=\'100\' fill=\'%230b0c10\'/><text x=\'50%\' y=\'55%\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%2300a3ff\' font-size=\'18\' font-family=\'sans-serif\' font-weight=\'bold\'>WE</text></svg>';">
+            </div>
+        </div>
+
+        <!-- Desktop Menu -->
+        <ul class="nav-menu">
+            <li><a href="#hero" class="nav-link active"><span data-lang="ne">मुख्यपृष्ठ</span><span data-lang="en">Home</span></a></li>
+            <li><a href="#about" class="nav-link"><span data-lang="ne">परिचय</span><span data-lang="en">About</span></a></li>
+            <li><a href="#services" class="nav-link"><span data-lang="ne">सेवाहरू</span><span data-lang="en">Services</span></a></li>
+            <li><a href="#packages" class="nav-link"><span data-lang="ne">प्याकेज</span><span data-lang="en">Packages</span></a></li>
+            <li><a href="#portfolio" class="nav-link"><span data-lang="ne">हाम्रो काम</span><span data-lang="en">Our Work</span></a></li>
+            <li><a href="#faq" class="nav-link"><span data-lang="ne">FAQ</span><span data-lang="en">FAQ</span></a></li>
+            <li><a href="#contact" class="nav-link"><span data-lang="ne">सम्पर्क</span><span data-lang="en">Contact</span></a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <!-- Language Switcher -->
+            <div class="lang-switch">
+                <button class="lang-btn active" id="btn-ne" onclick="setLanguage('ne')">ने</button>
+                <button class="lang-btn" id="btn-en" onclick="setLanguage('en')">EN</button>
             </div>
 
-            <button class="mobile-toggle" id="mobileToggle" aria-label="Open Navigation Menu">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+            <a href="#packages" class="btn-book-nav"><span data-lang="ne">Book Now</span><span data-lang="en">Book Now</span></a>
+
+            <button class="mobile-hamburger" id="hamburger" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
         </div>
-    </nav>
+    </div>
+</header>
 
-    <!-- MOBILE NAVIGATION MENU -->
-    <div class="overlay" id="overlay"></div>
-    <div class="mobile-menu" id="mobileMenu">
-        <div>
-            <div class="brand-lockup" style="margin-bottom: 2.5rem;">
-                <div class="circle-logo" style="width: 50px; height: 50px;">
-                    <img src="sahara-tv-hd-logo.png" alt="SAHARA TV HD Logo">
-                </div>
-                <span class="brand-sep">×</span>
-                <div class="circle-logo" style="width: 50px; height: 50px;">
-                    <img src="western-editors-logo.png" alt="WESTERN EDITORS Logo">
-                </div>
+<!-- Mobile Navigation Drawer -->
+<div class="mobile-overlay" id="mobile-overlay"></div>
+<div class="mobile-drawer" id="mobile-drawer">
+    <a href="#hero" class="nav-link"><span data-lang="ne">मुख्यपृष्ठ</span><span data-lang="en">Home</span></a>
+    <a href="#about" class="nav-link"><span data-lang="ne">परिचय</span><span data-lang="en">About</span></a>
+    <a href="#services" class="nav-link"><span data-lang="ne">सेवाहरू</span><span data-lang="en">Services</span></a>
+    <a href="#packages" class="nav-link"><span data-lang="ne">प्याकेज</span><span data-lang="en">Packages</span></a>
+    <a href="#portfolio" class="nav-link"><span data-lang="ne">हाम्रो काम</span><span data-lang="en">Our Work</span></a>
+    <a href="#faq" class="nav-link"><span data-lang="ne">FAQ</span><span data-lang="en">FAQ</span></a>
+    <a href="#contact" class="nav-link"><span data-lang="ne">सम्पर्क</span><span data-lang="en">Contact</span></a>
+    <a href="#packages" class="btn-primary" style="margin-top: 20px; text-align: center;">Book Now</a>
+</div>
+
+<!-- HERO SECTION -->
+<section class="hero" id="hero">
+    <div class="hero-bg-glow"></div>
+    <div class="container hero-content">
+        
+        <div class="hero-brand-lockup">
+            <div class="circle-logo-frame hero-size">
+                <img src="assets/sahara-tv-hd-logo.png" alt="SAHARA TV HD Logo" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100\' height=\'100\' viewBox=\'0 0 100 100\'><rect width=\'100\' height=\'100\' fill=\'%230b0c10\'/><text x=\'50%\' y=\'55%\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%23d4af37\' font-size=\'14\' font-family=\'sans-serif\' font-weight=\'bold\'>SAHARA</text></svg>';">
             </div>
-            <ul class="mobile-nav-links">
-                <li><a href="#hero" class="mobile-nav-link active">मुख्यपृष्ठ</a></li>
-                <li><a href="#about" class="mobile-nav-link">परिचय</a></li>
-                <li><a href="#services" class="mobile-nav-link">सेवाहरू</a></li>
-                <li><a href="#packages" class="mobile-nav-link">प्याकेज</a></li>
-                <li><a href="#portfolio" class="mobile-nav-link">हाम्रो काम</a></li>
-                <li><a href="#faq" class="mobile-nav-link">FAQ</a></li>
-                <li><a href="#contact" class="mobile-nav-link">सम्पर्क</a></li>
-            </ul>
+            <span class="hero-symbol">×</span>
+            <div class="circle-logo-frame hero-size">
+                <img src="assets/western-editors-logo.png" alt="WESTERN EDITORS Logo" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100\' height=\'100\' viewBox=\'0 0 100 100\'><rect width=\'100\' height=\'100\' fill=\'%230b0c10\'/><text x=\'50%\' y=\'55%\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%2300a3ff\' font-size=\'18\' font-family=\'sans-serif\' font-weight=\'bold\'>WE</text></svg>';">
+            </div>
         </div>
-        <div>
-            <a href="https://wa.me/9779716272953?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%BE%E0%A4%B0%20Western%20Editors%2C%20%E0%A4%AE%20event%20coverage%20%E0%A4%A4%E0%A4%A5%E0%A4%BE%20promotional%20packages%20%E0%A4%AC%E0%A4%BE%E0%A4%B0%E0%A5%87%20quotation%20%E0%A4%B0%20%E0%A4%A5%E0%A4%AA%20%E0%A4%9C%E0%A4%BE%E0%A4%A8%E0%A4%95%E0%A4%BE%E0%A4%B0%E0%A5%80%20%E0%A4%B2%E0%A4%BF%E0%A4%A8%20%E0%A4%9A%E0%A4%BE%E0%A4%B9%E0%A4%A3%E0%A5%8D%E0%A4%9B%E0%A5%81%E0%A4%A2%E0%A4%BE%E0%A4%82%E0%A4%A6%E0%A4%9B%E0%A5%81" target="_blank" class="btn btn-primary" style="width: 100%;">Book Now</a>
+
+        <div class="hero-location">
+            <span>📍 KOHALPUR, BANKE · NEPAL</span>
+        </div>
+
+        <h1 class="hero-title">
+            <span data-lang="ne">कार्यक्रम कभरेज तथा मिडिया प्रोडक्सन</span>
+            <span data-lang="en">Program Coverage & Media Production</span>
+        </h1>
+
+        <p class="hero-desc">
+            <span data-lang="ne">कार्यक्रम कभरेज, प्रचारात्मक भिडियो, समाचार तथा विज्ञापन सामग्री र सामाजिक सञ्जालका लागि तयार गरिएका गुणस्तरीय सामग्री निर्माण गर्ने एकीकृत क्रिएटिभ मिडिया टिम।</span>
+            <span data-lang="en">An integrated creative media team dedicated to delivering high-quality event coverage, promotional videos, news/ad content, and social media media production.</span>
+        </p>
+
+        <div class="hero-btns">
+            <a href="#packages" class="btn-primary">
+                <span data-lang="ne">प्याकेजहरू हेर्नुहोस्</span>
+                <span data-lang="en">View Packages</span>
+            </a>
+            <a href="#" class="btn-secondary" id="hero-quote-btn">
+                <span data-lang="ne">कोटेसन माग्नुहोस्</span>
+                <span data-lang="en">Request Quote</span>
+            </a>
         </div>
     </div>
+</section>
 
-    <!-- HERO SECTION -->
-    <section class="hero" id="hero">
-        <div class="hero-bg-glow"></div>
-        <div class="container hero-content">
-            <div class="hero-lockup">
-                <div class="circle-logo">
-                    <img src="sahara-tv-hd-logo.png" alt="SAHARA TV HD Logo">
-                </div>
-                <span class="brand-sep">×</span>
-                <div class="circle-logo">
-                    <img src="western-editors-logo.png" alt="WESTERN EDITORS Logo">
-                </div>
-            </div>
+<!-- ABOUT SECTION -->
+<section class="about" id="about">
+    <div class="container">
+        <h2 class="section-title">
+            <span data-lang="ne">सहकार्यको परिचय</span>
+            <span data-lang="en">About the Collaboration</span>
+        </h2>
+        <p class="section-subtitle">
+            <span data-lang="ne">SAHARA TV HD र WESTERN EDITORS को यो संयुक्त प्रयासले आमदर्शक र सेवाग्राहीलाई एउटै छानामुनि उत्कृष्ट मिडिया उत्पादन सेवाहरू प्रदान गर्दछ।</span>
+            <span data-lang="en">Combining broadcast reach and high-end video editing to deliver complete media solutions under one roof.</span>
+        </p>
 
-            <div class="hero-location">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
-                KOHALPUR, BANKE · NEPAL
-            </div>
-
-            <h1 class="hero-title">कार्यक्रम कभरेज तथा मिडिया प्रोडक्सन</h1>
-
-            <p class="hero-desc">
-                कार्यक्रम कभरेज, प्रचारात्मक भिडियो, समाचार तथा विज्ञापन सामग्री र सामाजिक सञ्जालका लागि तयार गरिएका गुणस्तरीय सामग्री निर्माण गर्ने एकीकृत क्रिएटिभ मिडिया टिम।
-            </p>
-
-            <div class="hero-cta">
-                <a href="#packages" class="btn btn-primary">प्याकेजहरू हेर्नुहोस्</a>
-                <a href="https://wa.me/9779716272953?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%BE%E0%A4%B0%20Western%20Editors%2C%20%E0%A4%AE%20event%20coverage%20%E0%A4%A4%E0%A4%A5%E0%A4%BE%20promotional%20packages%20%E0%A4%AC%E0%A4%BE%E0%A4%B0%E0%A5%87%20quotation%20%E0%A4%B0%20%E0%A4%A5%E0%A4%AA%20%E0%A4%9C%E0%A4%BE%E0%A4%A8%E0%A4%95%E0%A4%BE%E0%A4%B0%E0%A5%80%20%E0%A4%B2%E0%A4%BF%E0%A4%A8%20%E0%A4%9A%E0%A4%BE%E0%A4%B9%E0%A4%A3%E0%A5%8D%E0%A4%9B%E0%A5%81%E0%A4%A2%E0%A4%BE%E0%A4%82%E0%A4%A6%E0%A4%9B%E0%A5%81" target="_blank" class="btn btn-secondary">कोटेसन माग्नुहोस्</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ABOUT SECTION -->
-    <section class="section-padding" id="about">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">ABOUT COLLABORATION</span>
-                <h2 class="section-title">सहकार्यको परिचय</h2>
-            </div>
-
+        <div class="about-grid">
             <div class="about-card">
-                <p class="about-text">
-                    <strong>SAHARA TV HD</strong> र <strong>WESTERN EDITORS</strong> को संयुक्त सहकार्यले ब्रोडकास्टिङ कभरेज र आधुनिक मिडिया प्रोडक्सनलाई एकै ठाउँमा ल्याउँछ। हामी आम सभा, व्यवसायिक प्रवर्द्धन, सामाजिक कार्यक्रम तथा संस्थागत आवश्यकताका लागि उच्चस्तरीय भिडियो कभरेज, सम्पादन तथा मिडिया व्यवस्थापन सेवा प्रदान गर्दछौँ।
+                <p style="color: var(--text-muted); font-size: 1.1rem; text-align: center;">
+                    <span data-lang="ne">हाम्रो सहकार्यले कार्यक्रम कभरेज, समाचार तथा विज्ञापन सामग्री, प्रचारात्मक भिडियो, सामाजिक सञ्जाल सामग्री, र व्यावसायिक भिडियो सम्पादनलाई उच्च प्रविधि र सिर्जनात्मकताका साथ प्रस्तुत गर्दछ।</span>
+                    <span data-lang="en">Our collaboration combines Event Coverage, News & Advertising Content, Promotional Videos, Social Media Content, and Professional Video Editing with top-tier technology and creative mastery.</span>
                 </p>
 
-                <div class="workflow-title">हाम्रो सहकार्य प्रक्रिया</div>
-
-                <div class="workflow-grid">
-                    <div class="workflow-step">Coverage</div>
-                    <div class="workflow-arrow">➔</div>
-                    <div class="workflow-step">Production</div>
-                    <div class="workflow-arrow">➔</div>
-                    <div class="workflow-step">Editing</div>
-                    <div class="workflow-arrow">➔</div>
-                    <div class="workflow-step">Content</div>
-                    <div class="workflow-arrow">➔</div>
-                    <div class="workflow-step">Delivery</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SERVICES SECTION -->
-    <section class="section-padding" id="services">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">OUR SERVICES</span>
-                <h2 class="section-title">हाम्रा सेवाहरू</h2>
-                <p class="section-desc">तपाईंको आवश्यकता अनुसार व्यावसायिक मिडिया समाधान</p>
-            </div>
-
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-num">01</div>
-                    <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg></div>
-                    <h3 class="service-title">कार्यक्रम भिडियो कभरेज</h3>
-                    <p class="service-desc">कार्यक्रमको प्रकृति र आवश्यकता अनुसार professional video coverage.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-num">02</div>
-                    <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
-                    <h3 class="service-title">Full-Day Event Coverage</h3>
-                    <p class="service-desc">ठूला तथा विस्तृत कार्यक्रमका लागि full-day professional recording.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-num">03</div>
-                    <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6m-6 4h4"/></svg></div>
-                    <h3 class="service-title">समाचार / विज्ञापन सामग्री</h3>
-                    <p class="service-desc">समाचार तथा promotional/ad content का लागि आवश्यक video production.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-num">04</div>
-                    <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
-                    <h3 class="service-title">Promotional Video</h3>
-                    <p class="service-desc">व्यवसाय, संस्था, कार्यक्रम वा ब्रान्डका लागि professional promotional content.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-num">05</div>
-                    <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div>
-                    <h3 class="service-title">Social Media Video</h3>
-                    <p class="service-desc">Facebook, TikTok, Instagram तथा अन्य social platforms का लागि optimized video content.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-num">06</div>
-                    <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
-                    <h3 class="service-title">Event Highlight Video</h3>
-                    <p class="service-desc">कार्यक्रमका महत्वपूर्ण क्षणलाई cinematic highlight मा प्रस्तुत गर्ने।</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-num">07</div>
-                    <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg></div>
-                    <h3 class="service-title">Professional Video Editing</h3>
-                    <p class="service-desc">Professional editing, pacing, transitions, sound तथा post-production.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-num">08</div>
-                    <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></div>
-                    <h3 class="service-title">Raw Footage Delivery</h3>
-                    <p class="service-desc">सम्बन्धित पक्षले माग गरेमा raw footage उपलब्ध गराइने।</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-num">09</div>
-                    <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M12 8v8M8 12h8"/></svg></div>
-                    <h3 class="service-title">Drone Videography</h3>
-                    <p class="service-desc">आवश्यकता, स्थान, मौसम, availability तथा applicable permissions अनुसार aerial coverage.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-num">10</div>
-                    <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
-                    <h3 class="service-title">Content Production</h3>
-                    <p class="service-desc">Media तथा digital platforms का लागि आवश्यक creative content production.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PACKAGES SECTION -->
-    <section class="section-padding" id="packages">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">PRICING PACKAGES</span>
-                <h2 class="section-title">हाम्रा प्याकेजहरू</h2>
-                <p class="section-desc">तपाईंको आवश्यकता अनुसार पारदर्शी मूल्य र सेवाहरू</p>
-            </div>
-
-            <div class="packages-grid">
-                <!-- PACKAGE 01 -->
-                <div class="package-card featured">
-                    <div class="package-header">
-                        <span class="package-num">PACKAGE 01</span>
-                        <h3 class="package-name">वार्षिक सहकार्य</h3>
-                        <div class="package-price">NPR २,००,००० <span style="font-size: 1rem; font-weight: normal; color: var(--text-muted);">/ वर्ष</span></div>
+                <div class="workflow">
+                    <div class="workflow-step">
+                        <div class="workflow-step-num">01</div>
+                        <div class="workflow-step-title">Coverage</div>
                     </div>
-                    <ul class="package-features">
-                        <li class="package-feature">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span>१ वर्षको सहकार्य</span>
-                        </li>
-                        <li class="package-feature">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span>प्रमुख कार्यक्रमहरूको कभरेज</span>
-                        </li>
-                        <li class="package-feature">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span>Full-Day Shoot कार्यक्रमको condition, event को प्रकृति तथा आवश्यक coverage र आपसी सहमति अनुसार</span>
-                        </li>
-                        <li class="package-feature">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span>साना कार्यक्रमहरूको editing</span>
-                        </li>
-                        <li class="package-feature">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span>साना कार्यक्रमहरूको footage संस्था/सम्बन्धित पक्षले उपलब्ध गराउने</span>
-                        </li>
-                        <li class="package-feature">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span>Raw Footage माग गरेमा मात्र उपलब्ध गराइने</span>
-                        </li>
-                        <li class="package-feature">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span>Drone coverage आवश्यकता, समय, स्थान, मौसम, उपलब्धता र सहमति अनुसार</span>
-                        </li>
-                    </ul>
-                    <a href="https://wa.me/9779716272953?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%BE%E0%A4%B0%20Western%20Editors%2C%20%E0%A4%AE%20%E0%A4%B5%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B7%E0%A4%BF%E0%A4%95%20%E0%A4%B8%E0%A4%B9%E0%A4%95%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%AF%20package%20%28NPR%20%E0%A5%A8%2C%E0%A5%A6%E0%A5%A6%2C%E0%A5%A6%E0%A5%A6%E0%A5%A6%20%2F%20%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%B7%29%20%E0%A4%AC%E0%A4%BE%E0%A4%B0%E0%A5%87%20booking%20%E0%A4%A4%E0%A4%A5%E0%A4%BE%20%E0%A4%A5%E0%A4%AA%20%E0%A4%9C%E0%A4%BE%E0%A4%A8%E0%A4%95%E0%A4%BE%E0%A4%B0%E0%A5%80%20%E0%A4%B2%E0%A4%BF%E0%A4%A8%20%E0%A4%9A%E0%A4%BE%E0%A4%B9%E0%A4%A3%E0%A5%8D%E0%A4%9B%E0%A5%81%E0%A4%A2%E0%A4%BE%E0%A4%82%E0%A4%A6%E0%A4%9B%E0%A5%81" target="_blank" class="btn btn-primary" style="width: 100%;">Book Now</a>
-                </div>
-
-                <!-- PACKAGE 02 -->
-                <div class="package-card">
-                    <div class="package-header">
-                        <span class="package-num">PACKAGE 02</span>
-                        <h3 class="package-name">Full-Day Event Package</h3>
-                        <div class="package-price">NPR २५,००० <span style="font-size: 1rem; font-weight: normal; color: var(--text-muted);">/ दिन</span></div>
+                    <div class="workflow-step">
+                        <div class="workflow-step-num">02</div>
+                        <div class="workflow-step-title">Production</div>
                     </div>
-                    <ul class="package-features">
-                        <li class="package-feature">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span>Full-Day Shoot र Recording</span>
-                        </li>
-                        <li class="package-feature">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span>१ वटा edited news/ad content</span>
-                        </li>
-                        <li class="package-feature">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span>१ वटा social media highlight video</span>
-                        </li>
-                        <li class="package-feature">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span>Promotional content</span>
-                        </li>
-                        <li class="package-feature">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span>Raw Footage माग गरेमा मात्र उपलब्ध</span>
-                        </li>
-                        <li class="package-feature" style="color: var(--text-muted);">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-                            <span>Drone coverage समावेश छैन</span>
-                        </li>
-                    </ul>
-                    <a href="https://wa.me/9779716272953?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%BE%E0%A4%B0%20Western%20Editors%2C%20%E0%A4%AE%20Full-Day%20Event%20Package%20%28NPR%20%E0%A5%A8%E0%A5%AAE%2C%E0%A5%A6%E0%A5%A6%E0%A5%A6%20%2F%20%E0%A4%A6%E0%A4%BF%E0%A4%A8%29%20book%20%E0%A4%97%E0%A4%B0%E0%A5%8D%E0%A4%A8%20%E0%A4%9A%E0%A4%BE%E0%A4%B9%E0%A4%A3%E0%A5%8D%E0%A4%9B%E0%A5%81%E0%A4%A2%E0%A4%BE%E0%A4%82%E0%A4%A6%E0%A4%9B%E0%A5%81%E0%A4%A4%E0%A5%8D%E0%A4%AF%E0%A5%8B%E0%A4%B8%E0%A5%8B%20%E0%A4%95%E0%A5%83%E0%A4%AA%E0%A4%AF%E0%A4%BE%20%E0%A4%89%E0%A4%AA%E0%A4%B2%E0%A4%AC%E0%A5%8D%E0%A4%A0%20%E0%A4%AE%E0%A4%BF%E0%A4%A4%E0%A4%BF%20%E0%A4%A4%E0%A4%A5%E0%A4%BE%20%E0%A4%A5%E0%A4%AA%20%E0%A4%B5%E0%A4%BF%E0%A4%B5%E0%A4%B0%E0%A4%A3%20%E0%A4%AC%E0%A4%A4%E0%A4%BE%E0%A4%87%E0%A4%A6%E0%A4%BF%E0%A4%A8%E0%A5%81%E0%A4%B9%E0%A5%8B%E0%A4%B8%E0%A5%8D%E0%A4%A6%E0%A4%BF%E0%A4%A8%E0%A5%81%E0%A4%B9%E0%A5%8B%E0%A4%B8%E0%A5%8D%E0%A4%A6%E0%A4%BF%E0%A4%A8%E0%A5%81" target="_blank" class="btn btn-secondary" style="width: 100%;">Book Now</a>
-                </div>
-
-                <!-- PACKAGE 03 -->
-                <div class="package-card">
-                    <div class="package-header">
-                        <span class="package-num">PACKAGE 03</span>
-                        <h3 class="package-name">Promotional Video — With Drone</h3>
-                        <div class="package-price">NPR १२,५००</div>
+                    <div class="workflow-step">
+                        <div class="workflow-step-num">03</div>
+                        <div class="workflow-step-title">Editing</div>
                     </div>
-                    <ul class="package-features">
-                        <li class="package-feature">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span>Promotional video production</span>
-                        </li>
-                        <li class="package-feature">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span>Professional video editing</span>
-                        </li>
-                        <li class="package-feature">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span>Social-media-ready output</span>
-                        </li>
-                        <li class="package-feature">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span>Drone coverage समावेश छ</span>
-                        </li>
-                    </ul>
-                    <a href="https://wa.me/9779716272953?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%BE%E0%A4%B0%20Western%20Editors%2C%20%E0%A4%AE%20Promotional%20Video%20With%20Drone%20package%20%28NPR%20%E0%A5%A8%E0%A5%A8%2C%E0%A5%A0%E0%A5%A6%E0%A5%A6%29%20book%20%E0%A4%97%E0%A4%B0%E0%A5%8D%E0%A4%A8%20%E0%A4%9A%E0%A4%BE%E0%A4%B9%E0%A4%A3%E0%A5%8D%E0%A4%9B%E0%A5%81%E0%A4%A2%E0%A4%82%E0%A4%A6%E0%A4%9B%E0%A5%81%E0%A4%A4%E0%A5%8D%E0%A4%AF%E0%A5%8B%E0%A4%B8%E0%A5%8B%20%E0%A4%95%E0%A5%83%E0%A4%AA%E0%A4%AF%E0%A4%BE%20%E0%A4%A5%E0%A4%AA%20%E0%A4%9C%E0%A4%BE%E0%A4%A8%E0%A4%95%E0%A4%BE%E0%A4%B0%E0%A5%80%20%E0%A4%A6%E0%A4%BF%E0%A4%A8%E0%A5%81%E0%A4%B9%E0%A5%8B%E0%A4%B8%E0%A5%8D%E0%A4%A6%E0%A4%BF%E0%A4%A8%E0%A5%81" target="_blank" class="btn btn-secondary" style="width: 100%;">Book Now</a>
-                </div>
-
-                <!-- PACKAGE 04 -->
-                <div class="package-card">
-                    <div class="package-header">
-                        <span class="package-num">PACKAGE 04</span>
-                        <h3 class="package-name">Promotional Video — Without Drone</h3>
-                        <div class="package-price">NPR १०,०००</div>
+                    <div class="workflow-step">
+                        <div class="workflow-step-num">04</div>
+                        <div class="workflow-step-title">Content</div>
                     </div>
-                    <ul class="package-features">
-                        <li class="package-feature">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span>Promotional video production</span>
-                        </li>
-                        <li class="package-feature">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span>Professional video editing</span>
-                        </li>
-                        <li class="package-feature">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span>Social-media-ready output</span>
-                        </li>
-                        <li class="package-feature" style="color: var(--text-muted);">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-                            <span>Drone coverage समावेश छैन</span>
-                        </li>
-                    </ul>
-                    <a href="https://wa.me/9779716272953?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%BE%E0%A4%B0%20Western%20Editors%2C%20%E0%A4%AE%20Promotional%20Video%20Without%20Drone%20package%20%28NPR%20%E0%A5%A7%E0%A5%A6%2C%E0%A5%A0%E0%A5%A6%E0%A5%A6%29%20book%20%E0%A4%97%E0%A4%B0%E0%A5%8D%E0%A4%A8%20%E0%A4%9A%E0%A4%BE%E0%A4%B9%E0%A4%A3%E0%A5%8D%E0%A4%9B%E0%A5%81%E0%A4%A2%E0%A4%82%E0%A4%A6%E0%A4%9B%E0%A5%81%E0%A4%A4%E0%A5%8D%E0%A4%AF%E0%A5%8B%E0%A4%B8%E0%A5%8B%20%E0%A4%95%E0%A5%83%E0%A4%AA%E0%A4%AF%E0%A4%BE%20%E0%A4%A5%E0%A4%AA%20%E0%A4%9C%E0%A4%BE%E0%A4%A8%E0%A4%95%E0%A4%BE%E0%A4%B0%E0%A5%80%20%E0%A4%A6%E0%A4%BF%E0%A4%A8%E0%A5%81%E0%A4%B9%E0%A5%8B%E0%A4%B8%E0%A5%8D%E0%A4%A6%E0%A4%BF%E0%A4%A8%E0%A5%81" target="_blank" class="btn btn-secondary" style="width: 100%;">Book Now</a>
-                </div>
-            </div>
-
-            <!-- PACKAGE COMPARISON TABLE -->
-            <div class="comparison-wrapper">
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th>विशेषता</th>
-                            <th>वार्षिक सहकार्य</th>
-                            <th>Full-Day Event</th>
-                            <th>Promo + Drone</th>
-                            <th>Promo Without Drone</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Full-Day Shoot</td>
-                            <td>अवस्था र सहमति अनुसार</td>
-                            <td><span class="check-icon">✓</span></td>
-                            <td>—</td>
-                            <td>—</td>
-                        </tr>
-                        <tr>
-                            <td>Raw Footage</td>
-                            <td>माग गरेमा मात्र</td>
-                            <td>माग गरेमा मात्र</td>
-                            <td>सहमति अनुसार</td>
-                            <td>सहमति अनुसार</td>
-                        </tr>
-                        <tr>
-                            <td>Drone Coverage</td>
-                            <td>अवस्था र सहमति अनुसार</td>
-                            <td><span class="cross-icon">✕</span></td>
-                            <td><span class="check-icon">✓</span></td>
-                            <td><span class="cross-icon">✕</span></td>
-                        </tr>
-                        <tr>
-                            <td>Professional Editing</td>
-                            <td><span class="check-icon">✓</span></td>
-                            <td><span class="check-icon">✓</span></td>
-                            <td><span class="check-icon">✓</span></td>
-                            <td><span class="check-icon">✓</span></td>
-                        </tr>
-                        <tr>
-                            <td>Social Media Content</td>
-                            <td><span class="check-icon">✓</span></td>
-                            <td><span class="check-icon">✓</span></td>
-                            <td><span class="check-icon">✓</span></td>
-                            <td><span class="check-icon">✓</span></td>
-                        </tr>
-                        <tr>
-                            <td>Promotional Content</td>
-                            <td><span class="check-icon">✓</span></td>
-                            <td><span class="check-icon">✓</span></td>
-                            <td><span class="check-icon">✓</span></td>
-                            <td><span class="check-icon">✓</span></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
-
-    <!-- WHAT YOU RECEIVE -->
-    <section class="section-padding" style="background: rgba(255,255,255,0.01);">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">DELIVERABLES</span>
-                <h2 class="section-title">तपाईंले प्राप्त गर्नुहुने सामग्री</h2>
-            </div>
-
-            <div class="deliverables-grid">
-                <div class="deliverable-card">
-                    <div class="deliverable-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg></div>
-                    <div class="deliverable-title">सम्पादित भिडियो</div>
-                </div>
-                <div class="deliverable-card">
-                    <div class="deliverable-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/></svg></div>
-                    <div class="deliverable-title">Social Media Content</div>
-                </div>
-                <div class="deliverable-card">
-                    <div class="deliverable-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7"/></svg></div>
-                    <div class="deliverable-title">समाचार / प्रचारात्मक सामग्री</div>
-                </div>
-                <div class="deliverable-card">
-                    <div class="deliverable-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
-                    <div class="deliverable-title">Highlight Video</div>
-                </div>
-                <div class="deliverable-card">
-                    <div class="deliverable-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></div>
-                    <div class="deliverable-title">Raw Footage (माग अनुसार)</div>
-                </div>
-                <div class="deliverable-card">
-                    <div class="deliverable-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg></div>
-                    <div class="deliverable-title">Drone Footage</div>
-                </div>
-                <div class="deliverable-card">
-                    <div class="deliverable-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
-                    <div class="deliverable-title">उच्च गुणस्तरको Final File</div>
-                </div>
-                <div class="deliverable-card">
-                    <div class="deliverable-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
-                    <div class="deliverable-title">Social-Media-Ready Format</div>
-                </div>
-            </div>
-            
-            <p style="text-align: center; color: var(--text-muted); font-size: 0.9rem; margin-top: 2rem;">* Raw Footage सम्बन्धित पक्षले माग गरेमा मात्र उपलब्ध गराइनेछ।</p>
-        </div>
-    </section>
-
-    <!-- PRODUCTION PROCESS -->
-    <section class="section-padding">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">WORKFLOW</span>
-                <h2 class="section-title">हाम्रो Production Process</h2>
-            </div>
-
-            <div class="process-timeline">
-                <div class="process-step">
-                    <div class="process-num">1</div>
-                    <h3 class="process-title">IDEA</h3>
-                    <p class="process-desc">आवश्यक सामग्री र उद्देश्य पहिचान</p>
-                </div>
-                <div class="process-step">
-                    <div class="process-num">2</div>
-                    <h3 class="process-title">PLAN</h3>
-                    <p class="process-desc">कार्यक्रम तथा production requirement अनुसार योजना</p>
-                </div>
-                <div class="process-step">
-                    <div class="process-num">3</div>
-                    <h3 class="process-title">SHOOT</h3>
-                    <p class="process-desc">कार्यक्रमको प्रकृति र coverage requirement अनुसार recording</p>
-                </div>
-                <div class="process-step">
-                    <div class="process-num">4</div>
-                    <h3 class="process-title">EDIT</h3>
-                    <p class="process-desc">Professional editing तथा आवश्यक post-production</p>
-                </div>
-                <div class="process-step">
-                    <div class="process-num">5</div>
-                    <h3 class="process-title">DESIGN</h3>
-                    <p class="process-desc">आवश्यक graphic तथा promotional elements</p>
-                </div>
-                <div class="process-step">
-                    <div class="process-num">6</div>
-                    <h3 class="process-title">DELIVER</h3>
-                    <p class="process-desc">Final high-quality files तथा agreed formats मा delivery</p>
+                    <div class="workflow-step">
+                        <div class="workflow-step-num">05</div>
+                        <div class="workflow-step-title">Delivery</div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- PORTFOLIO SECTION -->
-    <section class="section-padding" id="portfolio">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">OUR WORKS</span>
-                <h2 class="section-title">हाम्रो काम</h2>
+<!-- SERVICES SECTION -->
+<section class="services" id="services">
+    <div class="container">
+        <h2 class="section-title">
+            <span data-lang="ne">हाम्रा सेवाहरू</span>
+            <span data-lang="en">Our Services</span>
+        </h2>
+        <p class="section-subtitle">
+            <span data-lang="ne">तपाईंको आवश्यकता अनुसारका व्यावसायिक मिडिया कभरेज तथा प्रोडक्सन सेवाहरू।</span>
+            <span data-lang="en">Professional media coverage and production services tailored to your goals.</span>
+        </p>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <span class="service-num">01</span>
+                <h3 class="service-title"><span data-lang="ne">कार्यक्रम भिडियो कभरेज</span><span data-lang="en">Event Video Coverage</span></h3>
+                <p class="service-desc"><span data-lang="ne">कार्यक्रमको प्रकृति र आवश्यकता अनुसार professional video coverage।</span><span data-lang="en">Professional video coverage based on event requirements.</span></p>
             </div>
 
-            <div class="portfolio-filters">
-                <button class="filter-btn active">ALL</button>
-                <button class="filter-btn">EVENTS</button>
-                <button class="filter-btn">PROMOTIONAL</button>
-                <button class="filter-btn">SOCIAL MEDIA</button>
-                <button class="filter-btn">DRONE</button>
-                <button class="filter-btn">NEWS / MEDIA</button>
+            <div class="service-card">
+                <span class="service-num">02</span>
+                <h3 class="service-title"><span data-lang="ne">Full-Day Event Coverage</span><span data-lang="en">Full-Day Event Coverage</span></h3>
+                <p class="service-desc"><span data-lang="ne">ठूला तथा विस्तृत कार्यक्रमका लागि full-day professional recording।</span><span data-lang="en">Full-day recording for comprehensive and large-scale events.</span></p>
             </div>
 
-            <div class="portfolio-empty">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-                <h3>हाम्रा वास्तविक परियोजनाका दृश्यहरू यहाँ प्रस्तुत गरिनेछन्।</h3>
+            <div class="service-card">
+                <span class="service-num">03</span>
+                <h3 class="service-title"><span data-lang="ne">समाचार / विज्ञापन सामग्री</span><span data-lang="en">News & Ad Content</span></h3>
+                <p class="service-desc"><span data-lang="ne">समाचार तथा promotional/ad content का लागि आवश्यक video production।</span><span data-lang="en">Video production for news broadcast and promotional ad content.</span></p>
+            </div>
+
+            <div class="service-card">
+                <span class="service-num">04</span>
+                <h3 class="service-title"><span data-lang="ne">Promotional Video</span><span data-lang="en">Promotional Video</span></h3>
+                <p class="service-desc"><span data-lang="ne">व्यवसाय, संस्था, कार्यक्रम वा ब्रान्डका लागि professional promotional content।</span><span data-lang="en">High-end promo videos for businesses, brands, and organizations.</span></p>
+            </div>
+
+            <div class="service-card">
+                <span class="service-num">05</span>
+                <h3 class="service-title"><span data-lang="ne">Social Media Video</span><span data-lang="en">Social Media Video</span></h3>
+                <p class="service-desc"><span data-lang="ne">Facebook, TikTok, Instagram तथा अन्य social platforms का लागि optimized video content।</span><span data-lang="en">Videos optimized specifically for social media engagement.</span></p>
+            </div>
+
+            <div class="service-card">
+                <span class="service-num">06</span>
+                <h3 class="service-title"><span data-lang="ne">Event Highlight Video</span><span data-lang="en">Event Highlight Video</span></h3>
+                <p class="service-desc"><span data-lang="ne">कार्यक्रमका महत्वपूर्ण क्षणलाई cinematic highlight मा प्रस्तुत गर्ने।</span><span data-lang="en">Cinematic recap highlights showcasing key event moments.</span></p>
+            </div>
+
+            <div class="service-card">
+                <span class="service-num">07</span>
+                <h3 class="service-title"><span data-lang="ne">Professional Video Editing</span><span data-lang="en">Professional Video Editing</span></h3>
+                <p class="service-desc"><span data-lang="ne">Professional editing, pacing, transitions, sound तथा post-production।</span><span data-lang="en">Expert pacing, color grading, sound design, and post-production.</span></p>
+            </div>
+
+            <div class="service-card">
+                <span class="service-num">08</span>
+                <h3 class="service-title"><span data-lang="ne">Raw Footage Delivery</span><span data-lang="en">Raw Footage Delivery</span></h3>
+                <p class="service-desc"><span data-lang="ne">सम्बन्धित पक्षले माग गरेमा raw footage उपलब्ध गराइने।</span><span data-lang="en">Original raw footage provided upon client request.</span></p>
+            </div>
+
+            <div class="service-card">
+                <span class="service-num">09</span>
+                <h3 class="service-title"><span data-lang="ne">Drone Videography</span><span data-lang="en">Drone Videography</span></h3>
+                <p class="service-desc"><span data-lang="ne">आवश्यकता, स्थान, मौसम, availability तथा applicable permissions अनुसार aerial coverage।</span><span data-lang="en">Aerial footage subject to weather, safety, and permissions.</span></p>
+            </div>
+
+            <div class="service-card">
+                <span class="service-num">10</span>
+                <h3 class="service-title"><span data-lang="ne">Content Production</span><span data-lang="en">Content Production</span></h3>
+                <p class="service-desc"><span data-lang="ne">Media तथा digital platforms का लागि आवश्यक creative content production।</span><span data-lang="en">Tailored creative content strategy and digital video production.</span></p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- TERMS & CONDITIONS -->
-    <section class="section-padding" style="background: rgba(255,255,255,0.01);">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">TERMS & CONDITIONS</span>
-                <h2 class="section-title">सहकार्यका आधारभूत शर्तहरू</h2>
-            </div>
+<!-- PACKAGES SECTION -->
+<section class="packages" id="packages">
+    <div class="container">
+        <h2 class="section-title">
+            <span data-lang="ne">हाम्रा प्याकेजहरू</span>
+            <span data-lang="en">Our Packages</span>
+        </h2>
+        <p class="section-subtitle">
+            <span data-lang="ne">तपाईंको आवश्यकता अनुसार स्पष्ट र उपयुक्त मूल्यका प्याकेजहरू।</span>
+            <span data-lang="en">Transparent plans built to suit different event scales and media goals.</span>
+        </p>
 
-            <div class="terms-card">
-                <ul class="terms-list">
-                    <li class="terms-item">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
-                        <span>Final deliverables चयन गरिएको package अनुसार फरक हुन सक्छ।</span>
-                    </li>
-                    <li class="terms-item">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
-                        <span>Major तथा minor कार्यक्रम/कार्यको scope अन्तिम agreement अनुसार निर्धारण गरिनेछ।</span>
-                    </li>
-                    <li class="terms-item">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
-                        <span>Raw Footage माग गरेमा मात्र उपलब्ध गराइनेछ र यसको delivery method दुवै पक्षको सहमतिअनुसार हुनेछ।</span>
-                    </li>
-                    <li class="terms-item">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
-                        <span>Drone coverage मौसम, स्थान, safety, availability, permissions तथा लागू regulations मा निर्भर हुनेछ।</span>
-                    </li>
-                    <li class="terms-item">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
-                        <span>सहमत क्षेत्रभन्दा बाहिरको transportation तथा accommodation आवश्यक परेमा छुट्टै खर्च लाग्न सक्छ।</span>
-                    </li>
-                    <li class="terms-item">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
-                        <span>Annual Collaboration अन्तर्गत Full-Day Shoot को आवश्यकता कार्यक्रमको condition, event nature र mutual agreement अनुसार निर्धारण गरिनेछ।</span>
-                    </li>
+        <div class="packages-grid">
+            <!-- Package 1 -->
+            <div class="pkg-card featured">
+                <div class="pkg-header">
+                    <span class="pkg-badge">PACKAGE 01</span>
+                    <h3 class="pkg-title"><span data-lang="ne">वार्षिक सहकार्य</span><span data-lang="en">Annual Collaboration</span></h3>
+                    <div class="pkg-price">NPR २,००,००० <span style="font-size: 0.9rem; font-weight: normal; color: var(--text-muted);">/ वर्ष</span></div>
+                </div>
+                <ul class="pkg-features">
+                    <li><span data-lang="ne">१ वर्षको सहकार्य</span><span data-lang="en">1 Year Collaboration</span></li>
+                    <li><span data-lang="ne">प्रमुख कार्यक्रमहरूको कभरेज</span><span data-lang="en">Major Events Coverage</span></li>
+                    <li><span data-lang="ne">Full-Day Shoot आवश्यकता: कार्यक्रमको condition, nature, र आपसी सहमतिअनुसार</span><span data-lang="en">Full-Day Shoots based on event condition and agreement</span></li>
+                    <li><span data-lang="ne">साना कार्यक्रमहरूको editing</span><span data-lang="en">Editing for smaller programs</span></li>
+                    <li><span data-lang="ne">Raw Footage माग गरेमा मात्र उपलब्ध</span><span data-lang="en">Raw footage available on request</span></li>
+                    <li><span data-lang="ne">Drone coverage आवश्यकता र सहमतिअनुसार</span><span data-lang="en">Drone coverage subject to feasibility & mutual terms</span></li>
                 </ul>
+                <button class="btn-book-pkg" id="pkg1-btn">Book Now</button>
+            </div>
+
+            <!-- Package 2 -->
+            <div class="pkg-card">
+                <div class="pkg-header">
+                    <span class="pkg-badge">PACKAGE 02</span>
+                    <h3 class="pkg-title"><span data-lang="ne">Full-Day Event Package</span><span data-lang="en">Full-Day Event Package</span></h3>
+                    <div class="pkg-price">NPR २५,००० <span style="font-size: 0.9rem; font-weight: normal; color: var(--text-muted);">/ दिन</span></div>
+                </div>
+                <ul class="pkg-features">
+                    <li><span data-lang="ne">Full-Day Shoot & Recording</span><span data-lang="en">Full-Day Shoot & Recording</span></li>
+                    <li><span data-lang="ne">१ वटा edited news/ad content</span><span data-lang="en">1 Edited News/Ad Video</span></li>
+                    <li><span data-lang="ne">१ वटा social media highlight video</span><span data-lang="en">1 Social Media Highlight Video</span></li>
+                    <li><span data-lang="ne">Promotional content</span><span data-lang="en">Promotional Content</span></li>
+                    <li><span data-lang="ne">Raw Footage माग गरेमा मात्र उपलब्ध</span><span data-lang="en">Raw footage on request</span></li>
+                    <li><span data-lang="ne">Drone coverage समावेश छैन</span><span data-lang="en">Drone coverage not included</span></li>
+                </ul>
+                <button class="btn-book-pkg" id="pkg2-btn">Book Now</button>
+            </div>
+
+            <!-- Package 3 -->
+            <div class="pkg-card">
+                <div class="pkg-header">
+                    <span class="pkg-badge">PACKAGE 03</span>
+                    <h3 class="pkg-title"><span data-lang="ne">Promotional Video — With Drone</span><span data-lang="en">Promo Video — With Drone</span></h3>
+                    <div class="pkg-price">NPR १२,५००</div>
+                </div>
+                <ul class="pkg-features">
+                    <li><span data-lang="ne">Promotional video production</span><span data-lang="en">Promotional video production</span></li>
+                    <li><span data-lang="ne">Professional video editing</span><span data-lang="en">Professional video editing</span></li>
+                    <li><span data-lang="ne">Social-media-ready output</span><span data-lang="en">Social-media-ready format</span></li>
+                    <li><span data-lang="ne">Drone coverage समावेश छ</span><span data-lang="en">Drone coverage included</span></li>
+                </ul>
+                <button class="btn-book-pkg" id="pkg3-btn">Book Now</button>
+            </div>
+
+            <!-- Package 4 -->
+            <div class="pkg-card">
+                <div class="pkg-header">
+                    <span class="pkg-badge">PACKAGE 04</span>
+                    <h3 class="pkg-title"><span data-lang="ne">Promotional Video — Without Drone</span><span data-lang="en">Promo Video — Without Drone</span></h3>
+                    <div class="pkg-price">NPR १०,०००</div>
+                </div>
+                <ul class="pkg-features">
+                    <li><span data-lang="ne">Promotional video production</span><span data-lang="en">Promotional video production</span></li>
+                    <li><span data-lang="ne">Professional video editing</span><span data-lang="en">Professional video editing</span></li>
+                    <li><span data-lang="ne">Social-media-ready output</span><span data-lang="en">Social-media-ready format</span></li>
+                    <li><span data-lang="ne">Drone coverage समावेश छैन</span><span data-lang="en">Drone coverage excluded</span></li>
+                </ul>
+                <button class="btn-book-pkg" id="pkg4-btn">Book Now</button>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- FAQ SECTION -->
-    <section class="section-padding" id="faq">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">QUESTIONS & ANSWERS</span>
-                <h2 class="section-title">Frequently Asked Questions</h2>
+<!-- COMPARISON SECTION -->
+<section class="comparison">
+    <div class="container">
+        <h2 class="section-title">
+            <span data-lang="ne">प्याकेज तुलना</span>
+            <span data-lang="en">Package Comparison</span>
+        </h2>
+        <p class="section-subtitle">
+            <span data-lang="ne">प्रत्येक प्याकेजमा समावेश विशेषताहरूको स्पष्ट विवरण।</span>
+            <span data-lang="en">A clear breakdown of features included across all packages.</span>
+        </p>
+
+        <div class="table-wrapper">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th><span data-lang="ne">विशेषता</span><span data-lang="en">Features</span></th>
+                        <th><span data-lang="ne">वार्षिक सहकार्य</span><span data-lang="en">Annual</span></th>
+                        <th><span data-lang="ne">Full-Day Event</span><span data-lang="en">Full-Day</span></th>
+                        <th><span data-lang="ne">Promo + Drone</span><span data-lang="en">Promo + Drone</span></th>
+                        <th><span data-lang="ne">Promo Without Drone</span><span data-lang="en">Promo w/o Drone</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Full-Day Shoot</strong></td>
+                        <td><span data-lang="ne">शर्त र आवश्यकता अनुसार</span><span data-lang="en">As per condition & agreement</span></td>
+                        <td><span class="check-icon">✓</span></td>
+                        <td><span class="cross-icon">—</span></td>
+                        <td><span class="cross-icon">—</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Raw Footage</strong></td>
+                        <td><span data-lang="ne">माग गरेमा मात्र</span><span data-lang="en">On request only</span></td>
+                        <td><span data-lang="ne">माग गरेमा मात्र</span><span data-lang="en">On request only</span></td>
+                        <td><span data-lang="ne">सहमति अनुसार</span><span data-lang="en">As per terms</span></td>
+                        <td><span data-lang="ne">सहमति अनुसार</span><span data-lang="en">As per terms</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Drone Coverage</strong></td>
+                        <td><span data-lang="ne">आवश्यकता र सहमति अनुसार</span><span data-lang="en">Feasibility & agreement</span></td>
+                        <td><span class="cross-icon">✕</span></td>
+                        <td><span class="check-icon">✓</span></td>
+                        <td><span class="cross-icon">✕</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Professional Editing</strong></td>
+                        <td><span class="check-icon">✓</span></td>
+                        <td><span class="check-icon">✓</span></td>
+                        <td><span class="check-icon">✓</span></td>
+                        <td><span class="check-icon">✓</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- WHAT YOU RECEIVE -->
+<section class="receives">
+    <div class="container">
+        <h2 class="section-title">
+            <span data-lang="ne">तपाईंले प्राप्त गर्नुहुने सामग्री</span>
+            <span data-lang="en">What You Receive</span>
+        </h2>
+        <p class="section-subtitle">
+            <span data-lang="ne">हाम्रो सेवाअन्तर्गत तयार हुने मुख्य नतिजाहरू।</span>
+            <span data-lang="en">Deliverables included as part of our media production workflow.</span>
+        </p>
+
+        <div class="receives-grid">
+            <div class="receive-card"><span data-lang="ne">सम्पादित भिडियो</span><span data-lang="en">Edited Video</span></div>
+            <div class="receive-card"><span data-lang="ne">Social Media Content</span><span data-lang="en">Social Media Content</span></div>
+            <div class="receive-card"><span data-lang="ne">समाचार / प्रचारात्मक सामग्री</span><span data-lang="en">News / Ad Content</span></div>
+            <div class="receive-card"><span data-lang="ne">Highlight Video</span><span data-lang="en">Highlight Video</span></div>
+            <div class="receive-card"><span data-lang="ne">Raw Footage (माग अनुसार)</span><span data-lang="en">Raw Footage (On Request)</span></div>
+            <div class="receive-card"><span data-lang="ne">Drone Footage (लागू हुनेमा)</span><span data-lang="en">Drone Footage (Where applicable)</span></div>
+            <div class="receive-card"><span data-lang="ne">उच्च गुणस्तरको Final File</span><span data-lang="en">High Quality Final File</span></div>
+            <div class="receive-card"><span data-lang="ne">Social-Media-Ready Format</span><span data-lang="en">Social-Media-Ready Format</span></div>
+        </div>
+
+        <div class="notice-banner">
+            💡 <strong><span data-lang="ne">नोट:</span><span data-lang="en">Note:</span></strong> <span data-lang="ne">Raw Footage सम्बन्धित पक्षले माग गरेमा मात्र उपलब्ध गराइनेछ।</span><span data-lang="en">Raw Footage is supplied only upon specific client request.</span>
+        </div>
+    </div>
+</section>
+
+<!-- PRODUCTION PROCESS -->
+<section class="process">
+    <div class="container">
+        <h2 class="section-title">
+            <span data-lang="ne">हाम्रो Production Process</span>
+            <span data-lang="en">Production Process</span>
+        </h2>
+        <p class="section-subtitle">
+            <span data-lang="ne">सिर्जनात्मक सोचदेखि अन्तिम नतिजासम्मको सुव्यवस्थित प्रक्रिया।</span>
+            <span data-lang="en">A streamlined workflow from initial ideation to final file delivery.</span>
+        </p>
+
+        <div class="process-steps">
+            <div class="process-card">
+                <div class="process-title">01. IDEA</div>
+                <div class="process-desc"><span data-lang="ne">आवश्यक सामग्री र उद्देश्य पहिचान</span><span data-lang="en">Concept & goal identification</span></div>
+            </div>
+            <div class="process-card">
+                <div class="process-title">02. PLAN</div>
+                <div class="process-desc"><span data-lang="ne">कार्यक्रम तथा requirement अनुसार योजना</span><span data-lang="en">Strategic shooting schedule</span></div>
+            </div>
+            <div class="process-card">
+                <div class="process-title">03. SHOOT</div>
+                <div class="process-desc"><span data-lang="ne">कार्यक्रमको प्रकृति अनुसार recording</span><span data-lang="en">On-location recording</span></div>
+            </div>
+            <div class="process-card">
+                <div class="process-title">04. EDIT</div>
+                <div class="process-desc"><span data-lang="ne">Professional editing & post-production</span><span data-lang="en">Post-production & editing</span></div>
+            </div>
+            <div class="process-card">
+                <div class="process-title">05. DESIGN</div>
+                <div class="process-desc"><span data-lang="ne">आवश्यक graphic तथा elements</span><span data-lang="en">Graphics & promo elements</span></div>
+            </div>
+            <div class="process-card">
+                <div class="process-title">06. DELIVER</div>
+                <div class="process-desc"><span data-lang="ne">Final high-quality files delivery</span><span data-lang="en">Final delivery in agreed format</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PORTFOLIO SECTION -->
+<section class="portfolio" id="portfolio">
+    <div class="container">
+        <h2 class="section-title">
+            <span data-lang="ne">हाम्रो काम</span>
+            <span data-lang="en">Our Work</span>
+        </h2>
+        <p class="section-subtitle">
+            <span data-lang="ne">हाम्रा वास्तविक परियोजनाका झलकहरू।</span>
+            <span data-lang="en">Previews of our genuine production projects.</span>
+        </p>
+
+        <div class="empty-portfolio">
+            <span data-lang="ne">हाम्रा वास्तविक परियोजनाका दृश्यहरू यहाँ प्रस्तुत गरिनेछन्।</span>
+            <span data-lang="en">Authentic project highlights and visual showcases will be displayed here.</span>
+        </div>
+    </div>
+</section>
+
+<!-- TERMS SECTION -->
+<section class="terms">
+    <div class="container">
+        <h2 class="section-title">
+            <span data-lang="ne">सहकार्यका आधारभूत शर्तहरू</span>
+            <span data-lang="en">Terms & Conditions</span>
+        </h2>
+        <div class="terms-card">
+            <ul class="terms-list">
+                <li><span data-lang="ne">Final deliverables चयन गरिएको package अनुसार फरक हुन सक्छ।</span><span data-lang="en">Final deliverables vary based on selected package scope.</span></li>
+                <li><span data-lang="ne">Major तथा minor कार्यक्रम/कार्यको scope अन्तिम agreement अनुसार निर्धारण गरिनेछ।</span><span data-lang="en">Event scope defined by final signed agreement.</span></li>
+                <li><span data-lang="ne">Raw Footage माग गरेमा मात्र उपलब्ध गराइनेछ।</span><span data-lang="en">Raw Footage provided only upon request.</span></li>
+                <li><span data-lang="ne">Drone coverage मौसम, स्थान, safety, availability, permissions तथा लागू regulations मा निर्भर हुनेछ।</span><span data-lang="en">Drone footage subject to weather, location, permissions, and safety.</span></li>
+                <li><span data-lang="ne">सहमत क्षेत्रभन्दा बाहिरको transportation तथा accommodation आवश्यक परेमा छुट्टै हुन सक्छ।</span><span data-lang="en">Travel and lodging beyond base region charged separately.</span></li>
+                <li><span data-lang="ne">Annual Collaboration अन्तर्गत Full-Day Shoot को आवश्यकता कार्यक्रमको condition, nature, र आपसी सहमति अनुसार निर्धारण गरिनेछ।</span><span data-lang="en">Annual Full-Day Shoots determined by event nature and mutual agreement.</span></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ SECTION -->
+<section class="faq" id="faq">
+    <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">
+            <span data-lang="ne">प्रायः सोधिने प्रश्नहरू र तिनका उत्तरहरू।</span>
+            <span data-lang="en">Answers to commonly asked questions.</span>
+        </p>
+
+        <div class="faq-accordion">
+            <details class="faq-item">
+                <summary class="faq-button">
+                    <span><span data-lang="ne">१. वार्षिक सहकार्यमा के-कस्ता काम समावेश हुन्छन्?</span><span data-lang="en">1. What is included in the Annual Collaboration?</span></span>
+                    <span class="faq-icon">+</span>
+                </summary>
+                <div class="faq-content">
+                    <span data-lang="ne">वार्षिक सहकार्यमा प्रमुख कार्यक्रमहरूको coverage, आवश्यकता अनुसार Full-Day Shoot, साना कार्यक्रमहरूको editing लगायत सहमत scope अनुसारका media-production कार्यहरू समावेश हुन्छन्।</span>
+                    <span data-lang="en">It includes major event coverage, Full-Day shoots as needed, editing for minor events, and agreed media production services.</span>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary class="faq-button">
+                    <span><span data-lang="ne">२. वार्षिक सहकार्यमा Full-Day Shoot कति पटक हुन्छ?</span><span data-lang="en">2. How many Full-Day Shoots in the Annual Package?</span></span>
+                    <span class="faq-icon">+</span>
+                </summary>
+                <div class="faq-content">
+                    <span data-lang="ne">यसको कुनै fixed संख्या वा frequency हुँदैन। कुन कार्यक्रममा Full-Day Shoot आवश्यक पर्ने हो भन्ने कुरा कार्यक्रमको condition, nature, coverage requirement र आपसी सहमति अनुसार तय गरिनेछ।</span>
+                    <span data-lang="en">There is no fixed frequency. Full-Day Shoots are decided based on event nature, condition, requirement, and mutual consent.</span>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary class="faq-button">
+                    <span><span data-lang="ne">३. Raw Footage प्राप्त गर्न सकिन्छ?</span><span data-lang="en">3. Can we get Raw Footage?</span></span>
+                    <span class="faq-icon">+</span>
+                </summary>
+                <div class="faq-content">
+                    <span data-lang="ne">सम्बन्धित पक्षले माग गरेमा Raw Footage उपलब्ध गराइनेछ। Raw Footage स्वतः deliver गरिने छैन।</span>
+                    <span data-lang="en">Raw Footage is provided upon request. It is not delivered automatically.</span>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary class="faq-button">
+                    <span><span data-lang="ne">४. Full-Day Event Package मा Drone coverage हुन्छ?</span><span data-lang="en">4. Is Drone coverage included in Full-Day Event Package?</span></span>
+                    <span class="faq-icon">+</span>
+                </summary>
+                <div class="faq-content">
+                    <span data-lang="ne">हुँदैन। Full-Day Event Package मा Drone coverage समावेश छैन।</span>
+                    <span data-lang="en">No. Drone coverage is excluded from the Full-Day Event package.</span>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary class="faq-button">
+                    <span><span data-lang="ne">५. Custom package बनाउन सकिन्छ?</span><span data-lang="en">5. Can we build a custom package?</span></span>
+                    <span class="faq-icon">+</span>
+                </summary>
+                <div class="faq-content">
+                    <span data-lang="ne">सकिन्छ। कार्यक्रमको प्रकृति, coverage requirement र scope अनुसार custom package बारे छलफल गर्न सकिन्छ।</span>
+                    <span data-lang="en">Yes! We can discuss tailored packages based on your specific requirements and scope.</span>
+                </div>
+            </details>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact" id="contact">
+    <div class="container">
+        <h2 class="section-title">
+            <span data-lang="ne">सम्पर्क गर्नुहोस्</span>
+            <span data-lang="en">Contact Us</span>
+        </h2>
+        <p class="section-subtitle">
+            <span data-lang="ne">हाम्रो टोलीसँग सिधा सम्पर्कका लागि विवरणहरू।</span>
+            <span data-lang="en">Get in touch directly with our respective team representatives.</span>
+        </p>
+
+        <div class="contact-grid">
+            <!-- SAHARA CARD -->
+            <div class="contact-card">
+                <div class="circle-logo-frame hero-size">
+                    <img src="assets/sahara-tv-hd-logo.png" alt="SAHARA TV HD Logo" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100\' height=\'100\' viewBox=\'0 0 100 100\'><rect width=\'100\' height=\'100\' fill=\'%230b0c10\'/><text x=\'50%\' y=\'55%\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%23d4af37\' font-size=\'14\' font-family=\'sans-serif\' font-weight=\'bold\'>SAHARA</text></svg>';">
+                </div>
+                <div class="contact-name">SAHARA TV HD</div>
+                <div class="contact-detail">📞 +977 9864782234</div>
+                <a href="tel:+9779864782234" class="btn-call">Call SAHARA TV HD</a>
             </div>
 
-            <div class="faq-accordion">
-                <div class="faq-item">
-                    <button class="faq-btn" aria-expanded="false">
-                        <span>1. वार्षिक सहकार्यमा के-कस्ता काम समावेश हुन्छन्?</span>
-                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-                    </button>
-                    <div class="faq-content">
-                        वार्षिक सहकार्यमा प्रमुख कार्यक्रमहरूको coverage, कार्यक्रमको condition तथा आवश्यकता अनुसार Full-Day Shoot, साना कार्यक्रमहरूको editing लगायत सहमत scope अनुसारका media-production कार्यहरू समावेश हुन्छन्।
-                    </div>
+            <!-- WESTERN EDITORS CARD -->
+            <div class="contact-card">
+                <div class="circle-logo-frame hero-size">
+                    <img src="assets/western-editors-logo.png" alt="WESTERN EDITORS Logo" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100\' height=\'100\' viewBox=\'0 0 100 100\'><rect width=\'100\' height=\'100\' fill=\'%230b0c10\'/><text x=\'50%\' y=\'55%\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%2300a3ff\' font-size=\'18\' font-family=\'sans-serif\' font-weight=\'bold\'>WE</text></svg>';">
                 </div>
+                <div class="contact-name">WESTERN EDITORS</div>
+                <div class="contact-detail">📞 +977 9716272953</div>
+                <div class="contact-detail">✉️ westerneditors01@gmail.com</div>
+                <a href="#" class="btn-wa" id="wa-contact-btn">WhatsApp गर्नुहोस्</a>
+                <a href="mailto:westerneditors01@gmail.com" class="btn-email">Email गर्नुहोस्</a>
+            </div>
+        </div>
+    </div>
+</section>
 
-                <div class="faq-item">
-                    <button class="faq-btn" aria-expanded="false">
-                        <span>2. वार्षिक सहकार्यमा Full-Day Shoot कति पटक हुन्छ?</span>
-                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-                    </button>
-                    <div class="faq-content">
-                        यसको कुनै fixed संख्या वा frequency हुँदैन। कुन कार्यक्रममा Full-Day Shoot आवश्यक पर्ने हो भन्ने कुरा कार्यक्रमको condition, event को nature, coverage requirement र आपसी सहमतिअनुसार तय गरिनेछ।
-                    </div>
-                </div>
+<!-- FINAL CTA -->
+<section class="final-cta">
+    <div class="container">
+        <h2 class="final-cta-title">
+            <span data-lang="ne">तपाईंको कार्यक्रमलाई उत्कृष्ट दृश्यमा प्रस्तुत गरौँ।</span>
+            <span data-lang="en">Bring your event vision to life.</span>
+        </h2>
+        <p class="final-cta-desc">
+            <span data-lang="ne">कार्यक्रम कभरेज, Promotional Video वा अन्य media-production आवश्यकता बारे छलफल गर्न हामीसँग सम्पर्क गर्नुहोस्।</span>
+            <span data-lang="en">Contact us today to discuss event coverage, promo videos, and media production services.</span>
+        </p>
+        <a href="#" class="btn-primary" id="cta-quote-btn">
+            <span data-lang="ne">कोटेसन माग्नुहोस्</span>
+            <span data-lang="en">Request Quote</span>
+        </a>
+    </div>
+</section>
 
-                <div class="faq-item">
-                    <button class="faq-btn" aria-expanded="false">
-                        <span>3. Raw Footage प्राप्त गर्न सकिन्छ?</span>
-                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-                    </button>
-                    <div class="faq-content">
-                        सम्बन्धित पक्षले माग गरेमा Raw Footage उपलब्ध गराइनेछ। Raw Footage स्वतः deliver गरिने छैन।
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-btn" aria-expanded="false">
-                        <span>4. वार्षिक सहकार्यमा Drone coverage हुन्छ?</span>
-                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-                    </button>
-                    <div class="faq-content">
-                        Drone coverage आवश्यकता, समय, स्थान, मौसम, उपलब्धता तथा आपसी सहमतिअनुसार हुनेछ।
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-btn" aria-expanded="false">
-                        <span>5. Full-Day Event Package मा Drone coverage हुन्छ?</span>
-                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-                    </button>
-                    <div class="faq-content">
-                        हुँदैन। Full-Day Event Package मा Drone coverage समावेश छैन।
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-btn" aria-expanded="false">
-                        <span>6. Promotional Video Without Drone को मूल्य कति हो?</span>
-                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-                    </button>
-                    <div class="faq-content">
-                        NPR १०,०००।
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-btn" aria-expanded="false">
-                        <span>7. Promotional Video With Drone को मूल्य कति हो?</span>
-                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-                    </button>
-                    <div class="faq-content">
-                        NPR १२,५००।
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-btn" aria-expanded="false">
-                        <span>8. Custom package बनाउन सकिन्छ?</span>
-                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-                    </button>
-                    <div class="faq-content">
-                        सकिन्छ। कार्यक्रमको प्रकृति, coverage requirement, content आवश्यकता तथा scope अनुसार custom package बारे आपसी छलफल गर्न सकिन्छ।
-                    </div>
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-brand-title">SAHARA TV HD × WESTERN EDITORS</div>
+                <p style="margin-bottom: 12px;"><span data-lang="ne">कार्यक्रम कभरेज तथा मिडिया प्रोडक्सन</span><span data-lang="en">Program Coverage & Media Production</span></p>
+                <p>📍 Kohalpur, Banke, Lumbini Province, Nepal</p>
+            </div>
+            <div>
+                <div style="color: #fff; font-weight: 700; margin-bottom: 12px;">Contact</div>
+                <p>SAHARA TV HD: +977 9864782234</p>
+                <p>WESTERN EDITORS: +977 9716272953</p>
+                <p>Email: westerneditors01@gmail.com</p>
+            </div>
+            <div>
+                <div style="color: #fff; font-weight: 700; margin-bottom: 12px;">Social Media</div>
+                <div class="footer-socials">
+                    <span class="social-tag">Instagram</span>
+                    <span class="social-tag">•</span>
+                    <span class="social-tag">Facebook</span>
+                    <span class="social-tag">•</span>
+                    <span class="social-tag">TikTok</span>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- CONTACT SECTION -->
-    <section class="section-padding" id="contact">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">GET IN TOUCH</span>
-                <h2 class="section-title">सम्पर्क गर्नुहोस्</h2>
-            </div>
-
-            <div class="contact-grid">
-                <!-- SAHARA TV HD CARD -->
-                <div class="contact-card">
-                    <div class="circle-logo">
-                        <img src="sahara-tv-hd-logo.png" alt="SAHARA TV HD Logo">
-                    </div>
-                    <h3 class="contact-name">SAHARA TV HD</h3>
-                    <div class="contact-info">
-                        <p>+977 9864782234</p>
-                    </div>
-                    <div class="contact-actions">
-                        <a href="tel:+9779864782234" class="btn btn-secondary" style="width: 100%;">Call SAHARA TV HD</a>
-                    </div>
-                </div>
-
-                <!-- WESTERN EDITORS CARD -->
-                <div class="contact-card">
-                    <div class="circle-logo">
-                        <img src="western-editors-logo.png" alt="WESTERN EDITORS Logo">
-                    </div>
-                    <h3 class="contact-name">WESTERN EDITORS</h3>
-                    <div class="contact-info">
-                        <p>+977 9716272953</p>
-                        <p style="font-size: 0.95rem;">westerneditors01@gmail.com</p>
-                    </div>
-                    <div class="contact-actions">
-                        <a href="https://wa.me/9779716272953" target="_blank" class="btn btn-primary" style="width: 100%;">WhatsApp गर्नुहोस्</a>
-                        <a href="mailto:westerneditors01@gmail.com" class="btn btn-secondary" style="width: 100%;">Email गर्नुहोस्</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- FINAL CTA -->
-            <div class="final-cta">
-                <h3 class="final-cta-title">तपाईंको कार्यक्रमलाई उत्कृष्ट दृश्यमा प्रस्तुत गरौँ।</h3>
-                <p class="final-cta-desc">कार्यक्रम कभरेज, Promotional Video वा अन्य media-production आवश्यकता बारे छलफल गर्न हामीसँग सम्पर्क गर्नुहोस्।</p>
-                <a href="https://wa.me/9779716272953?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%BE%E0%A4%B0%20Western%20Editors%2C%20%E0%A4%AE%20event%20coverage%20%E0%A4%A4%E0%A4%A5%E0%A4%BE%20promotional%20packages%20%E0%A4%AC%E0%A4%BE%E0%A4%B0%E0%A5%87%20quotation%20%E0%A4%B0%20%E0%A4%A5%E0%A4%AA%20%E0%A4%9C%E0%A4%BE%E0%A4%A8%E0%A4%95%E0%A4%BE%E0%A4%B0%E0%A5%80%20%E0%A4%B2%E0%A4%BF%E0%A4%A8%20%E0%A4%9A%E0%A4%BE%E0%A4%B9%E0%A4%A3%E0%A5%8D%E0%A4%9B%E0%A5%81%E0%A4%A2%E0%A4%82%E0%A4%A6%E0%A4%9B%E0%A5%81" target="_blank" class="btn btn-primary">कोटेसन माग्नुहोस्</a>
-            </div>
+        <div class="footer-bottom">
+            &copy; 2026 SAHARA TV HD × WESTERN EDITORS. All rights reserved.
         </div>
-    </section>
+    </div>
+</footer>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <div class="brand-lockup">
-                        <div class="circle-logo" style="width: 40px; height: 40px; padding: 2px;">
-                            <img src="sahara-tv-hd-logo.png" alt="SAHARA TV HD Logo">
-                        </div>
-                        <span class="brand-sep">×</span>
-                        <div class="circle-logo" style="width: 40px; height: 40px; padding: 2px;">
-                            <img src="western-editors-logo.png" alt="WESTERN EDITORS Logo">
-                        </div>
-                    </div>
-                    <p style="margin-top: 1rem; color: var(--text-muted);">
-                        कार्यक्रम कभरेज तथा मिडिया प्रोडक्सन<br>
-                        Kohalpur, Banke, Lumbini Province, Nepal
-                    </p>
-                </div>
+<!-- Back to top button -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
 
-                <div>
-                    <h4 class="footer-title">सम्पर्क जानकारी</h4>
-                    <div class="footer-contacts">
-                        <p><strong>SAHARA TV HD:</strong> +977 9864782234</p>
-                        <p><strong>WESTERN EDITORS:</strong> +977 9716272953</p>
-                        <p>westerneditors01@gmail.com</p>
-                    </div>
-                </div>
+<!-- JAVASCRIPT LOGIC -->
+<script>
+    // --- Language Toggle Logic ---
+    function setLanguage(lang) {
+        if (lang === 'en') {
+            document.body.classList.add('lang-en');
+            document.getElementById('btn-en').classList.add('active');
+            document.getElementById('btn-ne').classList.remove('active');
+        } else {
+            document.body.classList.remove('lang-en');
+            document.getElementById('btn-ne').classList.add('active');
+            document.getElementById('btn-en').classList.remove('active');
+        }
+    }
 
-                <div>
-                    <h4 class="footer-title">Social Media</h4>
-                    <ul class="social-labels">
-                        <li class="social-label">Facebook</li>
-                        <li class="social-label">Instagram</li>
-                        <li class="social-label">TikTok</li>
-                    </ul>
-                </div>
-            </div>
+    // --- WhatsApp Action URLs ---
+    const waNumber = "9779716272953";
 
-            <div class="footer-bottom">
-                &copy; 2026 SAHARA TV HD × WESTERN EDITORS. All rights reserved.
-            </div>
-        </div>
-    </footer>
+    const msgQuote = "नमस्कार Western Editors, म event coverage तथा promotional packages बारे quotation र थप जानकारी लिन चाहन्छु।";
+    const msgPkg1 = "नमस्कार Western Editors, म वार्षिक सहकार्य package (NPR २,००,००० / वर्ष) बारे booking तथा थप जानकारी लिन चाहन्छु।";
+    const msgPkg2 = "नमस्कार Western Editors, म Full-Day Event Package (NPR २५,००० / दिन) book गर्न चाहन्छु। कृपया उपलब्ध मिति तथा थप विवरण बताइदिनुहोस्।";
+    const msgPkg3 = "नमस्कार Western Editors, म Promotional Video With Drone package (NPR १२,५००) book गर्न चाहन्छु। कृपया थप जानकारी दिनुहोस्।";
+    const msgPkg4 = "नमस्कार Western Editors, म Promotional Video Without Drone package (NPR १०,०००) book गर्न चाहन्छु। कृपया थप जानकारी दिनुहोस्।";
 
-    <!-- BACK TO TOP BUTTON -->
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
-    </button>
+    function getWaUrl(msg) {
+        return "https://wa.me/" + waNumber + "?text=" + encodeURIComponent(msg);
+    }
 
-    <!-- JAVASCRIPT -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Navbar Scroll Effect
-            const navbar = document.getElementById('navbar');
-            const backToTop = document.getElementById('backToTop');
+    document.getElementById('hero-quote-btn').href = getWaUrl(msgQuote);
+    document.getElementById('cta-quote-btn').href = getWaUrl(msgQuote);
+    document.getElementById('wa-contact-btn').href = getWaUrl(msgQuote);
 
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 50) {
-                    navbar.classList.add('scrolled');
-                } else {
-                    navbar.classList.remove('scrolled');
-                }
+    document.getElementById('pkg1-btn').onclick = function() { window.open(getWaUrl(msgPkg1), '_blank'); };
+    document.getElementById('pkg2-btn').onclick = function() { window.open(getWaUrl(msgPkg2), '_blank'); };
+    document.getElementById('pkg3-btn').onclick = function() { window.open(getWaUrl(msgPkg3), '_blank'); };
+    document.getElementById('pkg4-btn').onclick = function() { window.open(getWaUrl(msgPkg4), '_blank'); };
 
-                if (window.scrollY > 400) {
-                    backToTop.classList.add('visible');
-                } else {
-                    backToTop.classList.remove('visible');
-                }
-            });
+    // --- Navbar Scroll & Sticky State ---
+    const navbar = document.getElementById('navbar');
+    const backToTop = document.getElementById('backToTop');
 
-            // Back To Top Click
-            backToTop.addEventListener('click', () => {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            });
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
 
-            // Mobile Menu Toggle
-            const mobileToggle = document.getElementById('mobileToggle');
-            const mobileMenu = document.getElementById('mobileMenu');
-            const overlay = document.getElementById('overlay');
-            const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+        if (window.scrollY > 400) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    });
 
-            function toggleMenu() {
-                mobileMenu.classList.toggle('active');
-                overlay.classList.toggle('active');
-            }
+    backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
 
-            mobileToggle.addEventListener('click', toggleMenu);
-            overlay.addEventListener('click', toggleMenu);
+    // --- Mobile Drawer Menu ---
+    const hamburger = document.getElementById('hamburger');
+    const drawer = document.getElementById('mobile-drawer');
+    const overlay = document.getElementById('mobile-overlay');
 
-            mobileNavLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    if (mobileMenu.classList.contains('active')) {
-                        toggleMenu();
-                    }
-                });
-            });
+    function toggleMenu() {
+        drawer.classList.toggle('open');
+        overlay.classList.toggle('open');
+    }
 
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape' && mobileMenu.classList.contains('active')) {
-                    toggleMenu();
-                }
-            });
+    hamburger.addEventListener('click', toggleMenu);
+    overlay.addEventListener('click', toggleMenu);
 
-            // FAQ Accordion (Single Open)
-            const faqItems = document.querySelectorAll('.faq-item');
-
-            faqItems.forEach(item => {
-                const btn = item.querySelector('.faq-btn');
-                const content = item.querySelector('.faq-content');
-
-                btn.addEventListener('click', () => {
-                    const isOpen = item.classList.contains('active');
-
-                    // Close all
-                    faqItems.forEach(otherItem => {
-                        otherItem.classList.remove('active');
-                        otherItem.querySelector('.faq-btn').setAttribute('aria-expanded', 'false');
-                        otherItem.querySelector('.faq-content').style.maxHeight = null;
-                    });
-
-                    // Open clicked if was closed
-                    if (!isOpen) {
-                        item.classList.add('active');
-                        btn.setAttribute('aria-expanded', 'true');
-                        content.style.maxHeight = content.scrollHeight + "px";
-                    }
-                });
-            });
-
-            // ScrollSpy / Active Nav Link Indicator
-            const sections = document.querySelectorAll('section[id]');
-            const navLinks = document.querySelectorAll('.nav-link');
-            const mobileLinks = document.querySelectorAll('.mobile-nav-link');
-
-            const observerOptions = {
-                root: null,
-                rootMargin: '-20% 0px -70% 0px',
-                threshold: 0
-            };
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const id = entry.target.getAttribute('id');
-                        
-                        navLinks.forEach(link => {
-                            link.classList.remove('active');
-                            if (link.getAttribute('href') === `#${id}`) {
-                                link.classList.add('active');
-                            }
-                        });
-
-                        mobileLinks.forEach(link => {
-                            link.classList.remove('active');
-                            if (link.getAttribute('href') === `#${id}`) {
-                                link.classList.add('active');
-                            }
-                        });
-                    }
-                });
-            }, observerOptions);
-
-            sections.forEach(section => observer.observe(section));
+    document.querySelectorAll('#mobile-drawer .nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            if (drawer.classList.contains('open')) toggleMenu();
         });
-    </script>
-</body>
-</html>
+    });
+
+    // --- Scroll Spy Observer ---
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-menu .nav-link');
+
+    const observerOptions = {
+        root: null,
+        rootMargin: '-20% 0px -70% 0px',
+        threshold: 0
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const id = entry.target.getAttribute('id');
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === '#' + id) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        });
+    }, observerOptions);
+
+    sections.forEach(section => observer.observe(section));
+</script>
